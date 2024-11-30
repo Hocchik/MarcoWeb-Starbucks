@@ -1,0 +1,36 @@
+.rbc-month-header{
+    background-color: #604C4C;
+}
+.rbc-day-bg{
+    background-color: white;
+    border-right: 0.5px solid black;
+}
+.rbc-button-link{
+    color: black;
+}
+.rbc-header{
+    color: white;
+    border-right: 0.5px solid black;    
+}
+.rbc-month-row{
+    border-top: 0.5px solid black;
+}
+.rbc-month-row + .rbc-month-row{
+    border-top: 0.5px solid black;
+}
+.rbc-month-view{
+    border: 1px solid black;
+}
+.rbc-toolbar span button{
+    background-color: white;
+    color: black;
+    
+}
+.rbc-event{
+    padding: 0;
+}
+
+.rbc-time-slot{
+    background-color: white;
+    color: black;
+}

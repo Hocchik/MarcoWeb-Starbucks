@@ -1,0 +1,11 @@
+
+.rewaimg{
+    display: none;
+}
+
+@media (min-width:1152px) {
+    .rewaimg{
+        width: 50%;
+        display: flex;
+    }
+}
