@@ -117,7 +117,7 @@ function MiniPagePromos() {
   React.useEffect(() => {
     getPromociones(),
     getProductos()
-  }, [])
+  }, [getPromociones])
 
 
   return (

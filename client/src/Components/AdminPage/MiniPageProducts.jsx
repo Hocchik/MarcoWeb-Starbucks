@@ -115,7 +115,7 @@ export default function MiniPageProducts() {
 
   useEffect(() => {
     getProductos()
-  }, [])  
+  }, [getProductos])  
 
 
   return (

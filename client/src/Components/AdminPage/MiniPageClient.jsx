@@ -60,6 +60,7 @@ export default function MiniPageClient() {
       formeditData._id = currentRow._id
       console.log(formeditData)
       updateClientes(formeditData)
+      
     } else if (action === 'delete') {
       console.log('Eliminando:', currentRow);
       // Lógica para eliminar
@@ -91,7 +92,7 @@ export default function MiniPageClient() {
 
   useEffect(() => {
     getClientes()
-  }, [])
+  }, [getClientes])
 
   return (
     <div className='flex justify-between items-end flex-col'>
@@ -214,7 +215,7 @@ export default function MiniPageClient() {
         onClick={() => setOpenCreate(true)}
         style={{ marginTop: '16px' }}
       >
-        Agregar Producto +
+        Agregar Cliente +
       </Button>
 
       {/* Main modal */}

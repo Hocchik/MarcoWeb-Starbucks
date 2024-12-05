@@ -31,8 +31,6 @@ export const AuthProviderAdmin = ({ children }) => {
             setErrors(error.response.data)
         }
     }
-
-
     //login
     const signin = async (admin) =>{
         try {
@@ -63,7 +61,7 @@ export const AuthProviderAdmin = ({ children }) => {
             return () => clearTimeout(timer)
         }
     }, [errors])
-
+/* 
     useEffect(() => {
         async function checkLogin() {
             const cookies = Cookies.get();
@@ -94,7 +92,7 @@ export const AuthProviderAdmin = ({ children }) => {
         }
         checkLogin();
         
-    }, []);
+    }, []); */
 
 
     return (

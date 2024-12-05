@@ -1,7 +1,7 @@
-import Navbar from "../Components/View/NavBar.jsx";
-import Footer from "../Components/Footer";
-import VistaPrincipal from "../Components/View/VistaPrincipal.jsx";
-import Imagenes from "../imgs/Imagenes.js";
+import Navbar from "../../Components/View/NavBar.jsx";
+import Footer from "../../Components/Footer.jsx";
+import VistaPrincipal from "../../Components/View/VistaPrincipal.jsx";
+import Imagenes from "../../imgs/Imagenes.js";
 
 function HomePage() {
   return (

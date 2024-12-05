@@ -63,11 +63,6 @@ const NAVIGATION = [
         icon: <ManageAccountsIcon />,
       },
       {
-        segment: 'configuracion',
-        title: 'Configuracion',
-        icon: <SettingsIcon />,
-      },
-      {
         segment: 'logout',
         title: 'Cerrar Sesión',
         icon: <SettingsIcon />,

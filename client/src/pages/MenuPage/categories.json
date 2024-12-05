@@ -1,0 +1,181 @@
+{
+    "categories": [
+      {
+        "name": "Bebidas",
+        "products": [
+          {
+            "id": 1,
+            "type": "Frappuccino",
+            "image": "https://via.placeholder.com/150",
+            "description": "Delicioso frappuccino.",
+            "category": "Bebidas",
+            "subtypes": [
+              {
+                "id": 101,
+                "name": "Holiday Cinnamon Frappucino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Frappuccino_v1.png",
+                "description": "Bebida de jarabe de canela dulce combinada con café Frappuccino  y leche, mezclada con hielo y cubierta con crema batida y polvo de nuez moscada. No incluye endulzantes adicionales. Imágenes referenciales."
+              },
+              {
+                "id": 102,
+                "name": "Toffee Nut Frappuccino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/TOFFEE_NUT_FRAPP_V2.PNG",
+                "description": "Bebida de jarabe de nuez toffee mezclada con hielo, café y leche, cubierta con crema batida y un delicioso topping con sabor a nuez toffee. No incluye endulzantes adicionales. Imágenes referenciales."
+              },
+              {
+                "id": 103,
+                "name": "Matcha Frappuccino",
+                "price": "S/16.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MATCHA_FRAPPUCCINO_ECOMMERCE_V1.png",
+                "description": "Frappuccino a base de matcha y leche, decorado con crema batida, sin café. Imágenes referenciales"
+              },
+              {
+                "id": 104,
+                "name": "Caramel Ribbon Crunch Frappuccino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_RIBBON_CRUNCH_FRAPPUCCINO_202304251646090696.PNG",
+                "description": "Delicioso frappuccino a base de café mezclado con jarabe de caramelo oscuro, leche y hielo, cubierto con crema batida y con una capa de salsa de caramelo oscuro, topping de caramelo y cubierto con azucar y caramelo."
+              },
+              {
+                "id": 105,
+                "name": "MMocha blanco Frappuccino",
+                "price": "S/15.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_BLANCO_FRAPP_V2.png",
+                "description": "Frappuccino de café mezclado con leche, mocha blanco y decorado con crema batida. Imágenes referenciales."
+              },
+              {
+                "id": 106,
+                "name": "Red Velvet Frappuccino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/RED_VELVET_FRAPPUCCINO_V1.png",
+                "description": "Jarabe de Red Velvet mezclada con Frappuccino® Roast, leche y hielo. Cubierto con crema batida y topping de Red Velvet. Imágenes referenciales."
+              },
+              {
+                "id": 107,
+                "name": "Peppermint Mocha Frappuccino",
+                "price": "S/17.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/Peppermint_Mocha_Latte_Frappuccino_v1.png",
+                "description": "Bebida de salsa de chocolate y jarabe de menta combinados con café y leche, mezclada con hielo. Cubierta con crema batida y baño de mocha. No incluye endulzantes adicionales. Imágenes referenciales."
+              },
+              {
+                "id": 108,
+                "name": "Black & White Mocha Frappuccino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/BLACK_AND_WHITE_MOCHA_FRAPP_V2.png",
+                "description": "Frappuccino de café con capas de mocha y mocha blanco combinadas leche y decorado con crema batida y chispas sabor chocolate. Imágenes referenciales."
+              },
+              {
+                "id": 109,
+                "name": "Ultimate Caramel Frappuccino",
+                "price": "S/16.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/ULTIMATE_CARAMEL_FRAPP_V2.png",
+                "description": "Versión renovada de nuestro clásico Caramel Frappuccino, con doble crema batida y extra de caramelo. Imágenes referenciales"
+              },
+              {
+                "id": 110,
+                "name": "Mocha Frappuccino",
+                "price": "S/15.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_FRAPP_V3.png",
+                "description": "Frappuccino de café mezclado con leche y jarabe de mocha, decorado con crema batida. Imágenes referenciales."
+              },
+              {
+                "id": 111,
+                "name": "Chocolúcuma cream Frappuccino",
+                "price": "S/17.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLUCUMA_CREAM_FRAPP_V2.png",
+                "description": "Nuestro Frappuccino peruano. Deliciosa lúcuma mezclada con mocha, jarabe de azucar y chispas sabor chocolate, decorado con crema batida y extra chispas sabor chocolate. Imágenes referenciales."
+              },
+              {
+                "id": 112,
+                "name": "Caramel Frappuccino",
+                "price": "S/15.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_FRAPP_V2.png",
+                "description": "Frappuccino de café mezclado con leche y endulzado con caramelo, decorado con crema batida y topping de caramelo. Imágenes referenciales"
+              },
+              {
+                "id": 113,
+                "name": "Triple Mocha Frappuccino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/TRIPLE_MOCHA_FRAPP_V2.png",
+                "description": "Delicioso Frappuccino de café mezclado con leche, jarabe de mocha y decorado con crema batida y topping de mocha. Imágenes referenciales."
+              },
+              {
+                "id": 114,
+                "name": "Algarrobina Frappuccino",
+                "price": "S/15.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/ALGARROBINA_FRAPP_V2.png",
+                "description": "Nuestro frappuccino peruano. Delicioso jarabe de algarrobina mezclada con café, leche y mocha; decorado con crema batida y topping de algarrobina. Imágenes referenciales."
+              },
+              {
+                "id": 115,
+                "name": "Chocolate Crème Frappuccino",
+                "price": "S/15.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLATE_CREME_FRAPP_V2.png",
+                "description": "Clásico frappuccino de chocolate mezclado con leche y jarabe de azucar, decorado con crema batida. Imágenes referenciales."
+              },
+              {
+                "id": 116,
+                "name": "Lúcuma Crème Frappuccino",
+                "price": "S/16.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/LUCUMA_CREME_FRAPP_V2.png",
+                "description": "Clásico frappuccino de lúcuma mezclado con leche, jarabe de azucar y decorado con crema batida. Imágenes referenciales."
+              },
+              {
+                "id": 117,
+                "name": "Manjar blanco Frappuccino",
+                "price": "S/15.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANJAR_BLANCO_FRAPP_V2.png",
+                "description": "Frappuccino de café mezclado con leche y manjar blanco; decorado con crema batida y topping de caramelo. Imágenes referenciales."
+              },
+              {
+                "id": 118,
+                "name": "Vainilla Crème Frappuccino",
+                "price": "S/15.00",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/VAINILLA_CREME_FRAPP_V2.png",
+                "description": "Clásico frappuccino de vainilla mezclado con leche, jarabe de azucar y decorado con crema batida. Imágenes referenciales."
+              },
+              {
+                "id": 119,
+                "name": "Café Frappuccino",
+                "price": "S/12.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CAFE_FRAPP_V2.png",
+                "description": "Clásico frappuccino con base de café, mezclado con leche y hielo. Sin endulzantes. Imágenes referenciales."
+              },
+              {
+                "id": 120,
+                "name": "Algarrobina Creme Frappuccino",
+                "price": "S/14.50",
+                "urlimage": "https://www.starbucks.pe/Multimedia/productos/Algarrobina_FR_V1.png",
+                "description": "Nuestro frappuccino peruano. Delicioso jarabe de algarrobina mezclada con leche y mocha; decorado con crema batida y topping de algarrobina. Imágenes referenciales."
+              }
+            ]
+          },
+
+          {
+            "id": 2,
+            "type": "Espresso Caliente",
+            "image": "https://via.placeholder.com/150",
+            "description": "Espresso caliente y aromático.",
+            "category": "Bebidas",
+            "subtypes": [
+
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Alimentos",
+        "products": [
+          {
+            "id": 3,
+            "type": "Pastelito",
+            "image": "https://via.placeholder.com/150",
+            "description": "Pastelito fresco.",
+            "category": "Alimentos"
+          }
+        ]
+      }
+    ]
+  }

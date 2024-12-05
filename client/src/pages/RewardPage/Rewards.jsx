@@ -1,3 +1,4 @@
+import Footer from "../../Components/Footer"
 import Navbar from "../../Components/View/NavBar"
 import RewardHand from "../../imgs/RewardsHand_new.png.webp"
 import "./Reward.css"
@@ -36,6 +37,7 @@ function Rewards() {
       </div>
 
     </div>
+    <Footer/>
     </>
   )
 }

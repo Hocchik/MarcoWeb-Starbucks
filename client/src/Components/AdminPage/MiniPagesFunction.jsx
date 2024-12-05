@@ -1,6 +1,5 @@
 import MiniPageCalendar from "./MiniPageCalendar";
 import MiniPageClient from "./MiniPageClient";
-import MiniPageConfiguracion from "./MiniPageConfiguracion";
 import MiniPageDetallecuenta from "./MiniPageDetallecuenta";
 import MiniPageGen from "./MiniPageGen";
 import MiniPageReportes from "./MiniPageReportes";
@@ -20,8 +19,8 @@ function MiniPages(pathname){
         case '/promociones': page = <MiniPagePromos/>; break;
         case '/calendario': page = <MiniPageCalendar/>; break;
         case '/cuenta/detallescuenta' : page = <MiniPageDetallecuenta/>; break;
-        case '/cuenta/configuracion' : page = <MiniPageConfiguracion/>; break;
         case '/cuenta/logout' : logout(); break;
+        default: break;
       }
      return page
 }

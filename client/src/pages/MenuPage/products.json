@@ -1,0 +1,25 @@
+{
+  "products": [
+      {
+          "id": 101,
+          "name": "Holiday Cinnamon Frappucino",
+          "category": "Bebidas",
+          "type": "Frappuccino",
+          "price": "S/16.50",
+          "image": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Frappuccino_v1.png",
+          "description": "Bebida de jarabe de canela dulce combinada con café Frappuccino  y leche, mezclada con hielo y cubierta con crema batida y polvo de nuez moscada. No incluye endulzantes adicionales. Imágenes referenciales."
+      },
+      {
+        "id": 102,
+        "name": "Holiday Cinnamon Frappucino",
+        "category": "Bebidas",
+        "type": "Frappuccino",
+        "price": "S/16.50",
+        "image": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Frappuccino_v1.png",
+        "description": "Bebida de jarabe de canela dulce combinada con café Frappuccino  y leche, mezclada con hielo y cubierta con crema batida y polvo de nuez moscada. No incluye endulzantes adicionales. Imágenes referenciales."
+      },
+      {
+
+      }  
+  ]
+}
