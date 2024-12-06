@@ -61,7 +61,7 @@ export const AuthProviderAdmin = ({ children }) => {
             return () => clearTimeout(timer)
         }
     }, [errors])
-/* 
+
     useEffect(() => {
         async function checkLogin() {
             const cookies = Cookies.get();
@@ -92,7 +92,7 @@ export const AuthProviderAdmin = ({ children }) => {
         }
         checkLogin();
         
-    }, []); */
+    }, []);
 
 
     return (

@@ -115,7 +115,7 @@ export default function MiniPageProducts() {
 
   useEffect(() => {
     getProductos()
-  }, [getProductos])  
+  }, [])  
 
 
   return (
@@ -255,7 +255,7 @@ export default function MiniPageProducts() {
               <TextField
                 name="price"
                 label="Price"
-                type="number"
+                type="text"
                 variant="outlined"
                 fullWidth
                 margin="dense"
@@ -319,9 +319,6 @@ export default function MiniPageProducts() {
               />
 
     </div>
-
-            
-
             <DialogActions>
               <Button onClick={() => setOpenCreate(false)} color="primary">
                 Cancelar
@@ -333,8 +330,6 @@ export default function MiniPageProducts() {
           </form>
         </DialogContent>
       </Dialog>
-
-
 
       </div>
     

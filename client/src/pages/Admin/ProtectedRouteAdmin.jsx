@@ -8,6 +8,7 @@ function ProtectedRouteAdmin() {
     if(loading) return <h1>
         Loading...
     </h1>
+    
     if(!loading && !isAuthenticated) return <Navigate to='/Admin-Login' replace />
 
     return <Outlet/>

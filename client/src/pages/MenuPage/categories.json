@@ -1,181 +1,1049 @@
 {
     "categories": [
       {
-        "name": "Bebidas",
+        "name": "BEBIDAS",
         "products": [
-          {
-            "id": 1,
-            "type": "Frappuccino",
-            "image": "https://via.placeholder.com/150",
-            "description": "Delicioso frappuccino.",
-            "category": "Bebidas",
-            "subtypes": [
-              {
-                "id": 101,
-                "name": "Holiday Cinnamon Frappucino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Frappuccino_v1.png",
-                "description": "Bebida de jarabe de canela dulce combinada con café Frappuccino  y leche, mezclada con hielo y cubierta con crema batida y polvo de nuez moscada. No incluye endulzantes adicionales. Imágenes referenciales."
-              },
-              {
-                "id": 102,
-                "name": "Toffee Nut Frappuccino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/TOFFEE_NUT_FRAPP_V2.PNG",
-                "description": "Bebida de jarabe de nuez toffee mezclada con hielo, café y leche, cubierta con crema batida y un delicioso topping con sabor a nuez toffee. No incluye endulzantes adicionales. Imágenes referenciales."
-              },
-              {
-                "id": 103,
-                "name": "Matcha Frappuccino",
-                "price": "S/16.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MATCHA_FRAPPUCCINO_ECOMMERCE_V1.png",
-                "description": "Frappuccino a base de matcha y leche, decorado con crema batida, sin café. Imágenes referenciales"
-              },
-              {
-                "id": 104,
-                "name": "Caramel Ribbon Crunch Frappuccino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_RIBBON_CRUNCH_FRAPPUCCINO_202304251646090696.PNG",
-                "description": "Delicioso frappuccino a base de café mezclado con jarabe de caramelo oscuro, leche y hielo, cubierto con crema batida y con una capa de salsa de caramelo oscuro, topping de caramelo y cubierto con azucar y caramelo."
-              },
-              {
-                "id": 105,
-                "name": "MMocha blanco Frappuccino",
-                "price": "S/15.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_BLANCO_FRAPP_V2.png",
-                "description": "Frappuccino de café mezclado con leche, mocha blanco y decorado con crema batida. Imágenes referenciales."
-              },
-              {
-                "id": 106,
-                "name": "Red Velvet Frappuccino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/RED_VELVET_FRAPPUCCINO_V1.png",
-                "description": "Jarabe de Red Velvet mezclada con Frappuccino® Roast, leche y hielo. Cubierto con crema batida y topping de Red Velvet. Imágenes referenciales."
-              },
-              {
-                "id": 107,
-                "name": "Peppermint Mocha Frappuccino",
-                "price": "S/17.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/Peppermint_Mocha_Latte_Frappuccino_v1.png",
-                "description": "Bebida de salsa de chocolate y jarabe de menta combinados con café y leche, mezclada con hielo. Cubierta con crema batida y baño de mocha. No incluye endulzantes adicionales. Imágenes referenciales."
-              },
-              {
-                "id": 108,
-                "name": "Black & White Mocha Frappuccino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/BLACK_AND_WHITE_MOCHA_FRAPP_V2.png",
-                "description": "Frappuccino de café con capas de mocha y mocha blanco combinadas leche y decorado con crema batida y chispas sabor chocolate. Imágenes referenciales."
-              },
-              {
-                "id": 109,
-                "name": "Ultimate Caramel Frappuccino",
-                "price": "S/16.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/ULTIMATE_CARAMEL_FRAPP_V2.png",
-                "description": "Versión renovada de nuestro clásico Caramel Frappuccino, con doble crema batida y extra de caramelo. Imágenes referenciales"
-              },
-              {
-                "id": 110,
-                "name": "Mocha Frappuccino",
-                "price": "S/15.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_FRAPP_V3.png",
-                "description": "Frappuccino de café mezclado con leche y jarabe de mocha, decorado con crema batida. Imágenes referenciales."
-              },
-              {
-                "id": 111,
-                "name": "Chocolúcuma cream Frappuccino",
-                "price": "S/17.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLUCUMA_CREAM_FRAPP_V2.png",
-                "description": "Nuestro Frappuccino peruano. Deliciosa lúcuma mezclada con mocha, jarabe de azucar y chispas sabor chocolate, decorado con crema batida y extra chispas sabor chocolate. Imágenes referenciales."
-              },
-              {
-                "id": 112,
-                "name": "Caramel Frappuccino",
-                "price": "S/15.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_FRAPP_V2.png",
-                "description": "Frappuccino de café mezclado con leche y endulzado con caramelo, decorado con crema batida y topping de caramelo. Imágenes referenciales"
-              },
-              {
-                "id": 113,
-                "name": "Triple Mocha Frappuccino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/TRIPLE_MOCHA_FRAPP_V2.png",
-                "description": "Delicioso Frappuccino de café mezclado con leche, jarabe de mocha y decorado con crema batida y topping de mocha. Imágenes referenciales."
-              },
-              {
-                "id": 114,
-                "name": "Algarrobina Frappuccino",
-                "price": "S/15.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/ALGARROBINA_FRAPP_V2.png",
-                "description": "Nuestro frappuccino peruano. Delicioso jarabe de algarrobina mezclada con café, leche y mocha; decorado con crema batida y topping de algarrobina. Imágenes referenciales."
-              },
-              {
-                "id": 115,
-                "name": "Chocolate Crème Frappuccino",
-                "price": "S/15.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLATE_CREME_FRAPP_V2.png",
-                "description": "Clásico frappuccino de chocolate mezclado con leche y jarabe de azucar, decorado con crema batida. Imágenes referenciales."
-              },
-              {
-                "id": 116,
-                "name": "Lúcuma Crème Frappuccino",
-                "price": "S/16.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/LUCUMA_CREME_FRAPP_V2.png",
-                "description": "Clásico frappuccino de lúcuma mezclado con leche, jarabe de azucar y decorado con crema batida. Imágenes referenciales."
-              },
-              {
-                "id": 117,
-                "name": "Manjar blanco Frappuccino",
-                "price": "S/15.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANJAR_BLANCO_FRAPP_V2.png",
-                "description": "Frappuccino de café mezclado con leche y manjar blanco; decorado con crema batida y topping de caramelo. Imágenes referenciales."
-              },
-              {
-                "id": 118,
-                "name": "Vainilla Crème Frappuccino",
-                "price": "S/15.00",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/VAINILLA_CREME_FRAPP_V2.png",
-                "description": "Clásico frappuccino de vainilla mezclado con leche, jarabe de azucar y decorado con crema batida. Imágenes referenciales."
-              },
-              {
-                "id": 119,
-                "name": "Café Frappuccino",
-                "price": "S/12.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/CAFE_FRAPP_V2.png",
-                "description": "Clásico frappuccino con base de café, mezclado con leche y hielo. Sin endulzantes. Imágenes referenciales."
-              },
-              {
-                "id": 120,
-                "name": "Algarrobina Creme Frappuccino",
-                "price": "S/14.50",
-                "urlimage": "https://www.starbucks.pe/Multimedia/productos/Algarrobina_FR_V1.png",
-                "description": "Nuestro frappuccino peruano. Delicioso jarabe de algarrobina mezclada con leche y mocha; decorado con crema batida y topping de algarrobina. Imágenes referenciales."
-              }
-            ]
-          },
+            {
+              "id": 1,
+              "type": "Frappuccinos",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/ULTIMATE_CARAMEL_FRAPP_V3.png",
+              "description": "Delicioso frappuccino.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 101,
+                  "name": "Holiday Cinnamon Frappucino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Frappuccino_v1.png",
+                  "description": "Bebida de jarabe de canela dulce combinada con café Frappuccino  y leche, mezclada con hielo y cubierta con crema batida y polvo de nuez moscada. No incluye endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 102,
+                  "name": "Toffee Nut Frappuccino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TOFFEE_NUT_FRAPP_V2.PNG",
+                  "description": "Bebida de jarabe de nuez toffee mezclada con hielo, café y leche, cubierta con crema batida y un delicioso topping con sabor a nuez toffee. No incluye endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 103,
+                  "name": "Matcha Frappuccino",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MATCHA_FRAPPUCCINO_ECOMMERCE_V1.png",
+                  "description": "Frappuccino a base de matcha y leche, decorado con crema batida, sin café. Imágenes referenciales"
+                },
+                {
+                  "id": 104,
+                  "name": "Caramel Ribbon Crunch Frappuccino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_RIBBON_CRUNCH_FRAPPUCCINO_202304251646090696.PNG",
+                  "description": "Delicioso frappuccino a base de café mezclado con jarabe de caramelo oscuro, leche y hielo, cubierto con crema batida y con una capa de salsa de caramelo oscuro, topping de caramelo y cubierto con azucar y caramelo."
+                },
+                {
+                  "id": 105,
+                  "name": "Mocha blanco Frappuccino",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_BLANCO_FRAPP_V2.png",
+                  "description": "Frappuccino de café mezclado con leche, mocha blanco y decorado con crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 106,
+                  "name": "Red Velvet Frappuccino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/RED_VELVET_FRAPPUCCINO_V1.png",
+                  "description": "Jarabe de Red Velvet mezclada con Frappuccino® Roast, leche y hielo. Cubierto con crema batida y topping de Red Velvet. Imágenes referenciales."
+                },
+                {
+                  "id": 107,
+                  "name": "Peppermint Mocha Frappuccino",
+                  "price": "S/17.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Peppermint_Mocha_Latte_Frappuccino_v1.png",
+                  "description": "Bebida de salsa de chocolate y jarabe de menta combinados con café y leche, mezclada con hielo. Cubierta con crema batida y baño de mocha. No incluye endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 108,
+                  "name": "Black & White Mocha Frappuccino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/BLACK_AND_WHITE_MOCHA_FRAPP_V2.png",
+                  "description": "Frappuccino de café con capas de mocha y mocha blanco combinadas leche y decorado con crema batida y chispas sabor chocolate. Imágenes referenciales."
+                },
+                {
+                  "id": 109,
+                  "name": "Ultimate Caramel Frappuccino",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ULTIMATE_CARAMEL_FRAPP_V2.png",
+                  "description": "Versión renovada de nuestro clásico Caramel Frappuccino, con doble crema batida y extra de caramelo. Imágenes referenciales"
+                },
+                {
+                  "id": 110,
+                  "name": "Mocha Frappuccino",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_FRAPP_V3.png",
+                  "description": "Frappuccino de café mezclado con leche y jarabe de mocha, decorado con crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 111,
+                  "name": "Chocolúcuma cream Frappuccino",
+                  "price": "S/17.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLUCUMA_CREAM_FRAPP_V2.png",
+                  "description": "Nuestro Frappuccino peruano. Deliciosa lúcuma mezclada con mocha, jarabe de azucar y chispas sabor chocolate, decorado con crema batida y extra chispas sabor chocolate. Imágenes referenciales."
+                },
+                {
+                  "id": 112,
+                  "name": "Caramel Frappuccino",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_FRAPP_V2.png",
+                  "description": "Frappuccino de café mezclado con leche y endulzado con caramelo, decorado con crema batida y topping de caramelo. Imágenes referenciales"
+                },
+                {
+                  "id": 113,
+                  "name": "Triple Mocha Frappuccino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TRIPLE_MOCHA_FRAPP_V2.png",
+                  "description": "Delicioso Frappuccino de café mezclado con leche, jarabe de mocha y decorado con crema batida y topping de mocha. Imágenes referenciales."
+                },
+                {
+                  "id": 114,
+                  "name": "Algarrobina Frappuccino",
+                  "price": "S/15.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ALGARROBINA_FRAPP_V2.png",
+                  "description": "Nuestro frappuccino peruano. Delicioso jarabe de algarrobina mezclada con café, leche y mocha; decorado con crema batida y topping de algarrobina. Imágenes referenciales."
+                },
+                {
+                  "id": 115,
+                  "name": "Chocolate Crème Frappuccino",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLATE_CREME_FRAPP_V2.png",
+                  "description": "Clásico frappuccino de chocolate mezclado con leche y jarabe de azucar, decorado con crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 116,
+                  "name": "Lúcuma Crème Frappuccino",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/LUCUMA_CREME_FRAPP_V2.png",
+                  "description": "Clásico frappuccino de lúcuma mezclado con leche, jarabe de azucar y decorado con crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 117,
+                  "name": "Manjar blanco Frappuccino",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANJAR_BLANCO_FRAPP_V2.png",
+                  "description": "Frappuccino de café mezclado con leche y manjar blanco; decorado con crema batida y topping de caramelo. Imágenes referenciales."
+                },
+                {
+                  "id": 118,
+                  "name": "Vainilla Crème Frappuccino",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/VAINILLA_CREME_FRAPP_V2.png",
+                  "description": "Clásico frappuccino de vainilla mezclado con leche, jarabe de azucar y decorado con crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 119,
+                  "name": "Café Frappuccino",
+                  "price": "S/12.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CAFE_FRAPP_V2.png",
+                  "description": "Clásico frappuccino con base de café, mezclado con leche y hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 120,
+                  "name": "Algarrobina Creme Frappuccino",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Algarrobina_FR_V1.png",
+                  "description": "Nuestro frappuccino peruano. Delicioso jarabe de algarrobina mezclada con leche y mocha; decorado con crema batida y topping de algarrobina. Imágenes referenciales."
+                }
+              ]
+            },
 
-          {
-            "id": 2,
-            "type": "Espresso Caliente",
-            "image": "https://via.placeholder.com/150",
-            "description": "Espresso caliente y aromático.",
-            "category": "Bebidas",
-            "subtypes": [
-
-            ]
-          }
+            {
+              "id": 2,
+              "type": "Espresso Caliente",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/LATTE_MACHIATTO_V3.png",
+              "description": "Espresso caliente y aromático.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 201,
+                  "name": "Holiday Cinnamon Latte",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Latte_v1.png",
+                  "description": "Espresso con leche vaporizada a la perfección y jarabe de canela dulce. Cubierto con crema batida y aderezo de nuez moscada. No incluye endulzantes adicionales. Para delivery no llevará crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 202,
+                  "name": "Toffee Nut",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TOFFEE_NUT_LATTE_V2.PNG",
+                  "description": "Bebida realizada con base en café espresso y leche al vapor, combinados con jarabe de nuez de toffee, crema batida y deliciosos confites de nuez de toffee.No incluye endulzantes adicionales. Para delivery no llevará crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 203,
+                  "name": "Red Velvet Latte",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/RED_VELVET_LATTE_V1.png",
+                  "description": "Espresso y leche vaporizada combinado con jarabe de Red Velvet, cubierto con deliciosa crema batida y topping de Red Velvet. Imágenes referenciales."
+                },
+                {
+                  "id": 204,
+                  "name": "Peppermint Mocha Latte",
+                  "price": "S/15.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Peppermint_Mocha_Latte_v1.png",
+                  "description": "Espresso, salsa de chocolate, dulce de menta y leche vaporizada, cubierto con una capa de crema batida y baño de mocha. No incluye endulzantes adicionales. Para delivery no llevará crema batida. Imágenes referenciales."
+                },
+                {
+                  "id": 205,
+                  "name": "Mocha Macchiato con bebida de avena",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/COCOA_MACCHIATO_CON_LECHE_DE_AVENA_ECOMMERCE.png",
+                  "description": "Un macchiatto con un twist, agregamos cocoa, topping de mocha y deliciosa bebida de avena vaporizada. Sin endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 206,
+                  "name": "Black & White Mocha",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/BLACK_AND_WHITE_MOCHA_V2.png",
+                  "description": "Café Espresso con capas de mocha y mocha blanco combinadas en leche vaporizaday chispas sabor chocolate. No lleva crema batida. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 207,
+                  "name": "Americano",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/AMERICANO_V2.png",
+                  "description": "Café Espresso de cuerpo completo con agua caliente. En caso la pidas por Delivery, la bebida se entregará en un vaso de tamaño mayor para evitar derrames. Imágenes referenciales"
+                },
+                {
+                  "id": 208,
+                  "name": "Flat white",
+                  "price": "S/14.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/FLAT_WHITE_V2.png",
+                  "description": "Intenso café ristretto mezclado con leche vaporizada y decorado con un punto de espuma. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 209,
+                  "name": "Latte",
+                  "price": "S/11.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/LATTE_V2.png",
+                  "description": "Café Espresso de cuerpo completo mezclado con leche vaporizada. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 210,
+                  "name": "Latte Macchiato",
+                  "price": "S/14.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/LATTE_MACHIATTO_V2.png",
+                  "description": "Leche vaporizada coronada con shots de intenso café espresso. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 211,
+                  "name": "Mocha café",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_CAFE_V2.png",
+                  "description": "Café Espresso mezclado con mocha y leche vaporizada. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 212,
+                  "name": "Vainilla Latte",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/VAINILLA_LATTE_V2.png",
+                  "description": "Delicioso café Espresso mezclado con vainilla y leche vaporizada. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 213,
+                  "name": "Caramel Macchiato",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_MACCHIATO_V2.png",
+                  "description": "Leche vaporizada con vainilla, coronado con shot de café Espresso y decorado con una rejilla de caramelo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 214,
+                  "name": "Mocha blanco café",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_BLANCO_CAFE_V2.png",
+                  "description": "Café Espresso mezclado con mocha blanco y leche vaporizada. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 215,
+                  "name": "Skinny Vainilla Latte",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/SKINNY_%20VAINILLA_LATTE_V2.png",
+                  "description": "Café Espresso mezclado con leche vaporizada y jarabe de vainilla sin azúcar. Imágenes referenciales."
+                },
+                {
+                  "id": 216,
+                  "name": "Manjar blanco Latte",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANJAR_BLANCO_LATTE_V2.png",
+                  "description": "Café Espresso mezclado con manjar blanco y leche vaporizada, decorado con topping de caramelo. Sin endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 217,
+                  "name": "Algarrobina Latte",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ALGARROBINA_LATTE_V2.png",
+                  "description": "Deliciosa algarrobina mezclada con café Esspreso, leche vaporizada y mocha; decorado con topping de algarrobina. Sin endulzantes. Imágenes referenciales."
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "type": "Espresso Frío",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/CARAMEL_MACCHIATO_HELADO_V4.png",
+              "description": "Espresso frío y refrescante.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 301,
+                  "name": "Holiday Cinnamon Latte Helado",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Holiday_Cinnamon_Latte_Helado_v1.png",
+                  "description": "Espresso con leche helada, jarabe de canela dulce y cubos de hielo, cubierto con crema batida y aderezo de nuez moscada. No incluye endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 302,
+                  "name": "Toffee Nut Helado",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TOFFEE_NUT_HELADO_V2.PNG",
+                  "description": "Bebida realizada con base en café combinado con jarabe de nuez toffee y leche. Servido con hielo, cubierto con crema batida y deliciosos confites de Toffee Nut. No incluye endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 303,
+                  "name": "Red Velvet Latte Helado",
+                  "price": "S/15.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ICED_RED_VELVET_LATTE_V1.png",
+                  "description": "Espresso y leche fría combinada con salsa de Red Velvet, cuberto con deliciosa crema batida y topping de Red Velvet. Imágenes referenciales."
+                },
+                {
+                  "id": 304,
+                  "name": "Peppermint Mocha Latte Helado",
+                  "price": "S/15.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Peppermint_Mocha_Latte_Helado_v1.png",
+                  "description": "Bebida de espresso, salsa de chocolate, dulce de menta y leche helada con cubos de hielo, cubierto con una capa de crema batida y baño de mocha. No incluye endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 305,
+                  "name": "Latte Frío con bebida de avena",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ICED_LATTE_CON_LECHE_DE_AVENA_ECOMMERCE.png",
+                  "description": "Café espresso de cuerpo completo mezclado con bebida de avena vaporizada. Imágenes referenciales."
+                },
+                {
+                  "id": 306,
+                  "name": "Cocoa Macchiatto Frío con bebida de avena",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_MACCHIATO_FR%C3%8DO_ECOMMERCE.png",
+                  "description": "Un macchiatto con un twist, agregamos cocoa, topping de mocha y deliciosa bebida de avena fría. Sin endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 307,
+                  "name": "Black Cold Brew",
+                  "price": "S/10.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/BLACK_COLD_BREW_V2.png",
+                  "description": "Café intenso filtrado por más de 20 horas, servido con agua y cubos de hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 308,
+                  "name": "Americano helado",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/AMERICANO_HELADO_V2.png",
+                  "description": "Café Espresso de cuerpo completo con agua y hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 309,
+                  "name": "Latte helado",
+                  "price": "S/11.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/LATTE_HELADO_V2.png",
+                  "description": "Café Espresso de cuerpo completo mezclado con leche fría y cubos de hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 310,
+                  "name": "Vainilla Latte helado",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/VAINILLA_LATTE_HELADO_V2.png",
+                  "description": "Delicioso café Espresso mezclado con vainilla, leche fría y cubos de hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 311,
+                  "name": "Caramel Macchiato helado",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CARAMEL_MACCHIATO_HELADO_202302161101006150.PNG",
+                  "description": "Leche fría mezclada con cubos de hielo, vainilla, coronado con shot de café Espresso y decorado con una rejilla de caramelo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 312,
+                  "name": "Mocha blanco café helado",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_BLANCO_CAFE_HELADO_V2.png",
+                  "description": "Café Espresso mezclado con mocha blanco, leche fría y cubos de hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 313,
+                  "name": "Manjar blanco Latte helado",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANJAR_BLANCO_LATTE_HELADO_V2.png",
+                  "description": "Café espresso mezclado con manjar blanco, leche fría y cubos de hielo, decorado con topping de caramelo. Sin endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 314,
+                  "name": "Skinny Vainilla Latte helado",
+                  "price": "S/11.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/SKINNY_VAINILLA_LATTE_HELADO_V2.png",
+                  "description": "Café Espresso mezclado con leche fría, cubos de hielo y jarabe de vainilla sin azúcar. Imágenes referenciales."
+                },
+                {
+                  "id": 315,
+                  "name": "Mocha café helado",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MOCHA_CAFE_HELADO_V2.png",
+                  "description": "Café Espresso mezclado con mocha, leche dría y cubos de hielo. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 316,
+                  "name": "Vainilla Cold brew",
+                  "price": "S/11.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/Vainilla_Cold_brew_V1.png",
+                  "description": "Café intenso filtrado por más de 20 horas con un toque dulce de crema de vainilla, servido con cubos de hielo. Sin endulzantes adicionales. Imágenes referenciales."
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "type": "Refreshers",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/PINK_DRINK_V3.png",
+              "description": "Bebidas refrescantes y frutales.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 401,
+                  "name": "Strawberry Acai Frozen Refresher",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/STRAWBERRY_ACAI_FROZEN_REFRESHER_202303231539284586.PNG",
+                  "description": "¡Nuevo! Bebida elaborada con extracto de café verde, jugo de fresa y acaí, en versión frozen. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 402,
+                  "name": "Mango Dragon Frozen Refresher",
+                  "price": "S/16.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANGO_DRAGON_FROZEN_REFRESHER_202303231541268568.PNG",
+                  "description": "¡Nuevo! Bebida elaborada con extracto de café verde, jugo de Pitahaya real en versión frozen. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 403,
+                  "name": "Strawberry Acaí Refresher",
+                  "price": "S/13.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/STRAWBERRY_ACAI_REFRESHER_V2.png",
+                  "description": "Bebida elaborada con extracto de grano verde de café, mezclado con jugo de fresa y acaí. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 404,
+                  "name": "Strawberry Acaí Lemonade Refresher",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/STRAWBERRY_ACAI_LEMONADE_REFRESHER_V2.png",
+                  "description": "Bebida elaborada con extracto de grano verde de café, mezclado con limonada, jugo de fresa y acaí. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 405,
+                  "name": "Pink Drink",
+                  "price": "S/15.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/PINK_DRINK_V2.png",
+                  "description": "Bebida elaborada con concentrado de café verde sabor a Fresa, mezclado con bebida vegetal de coco y acaí deshidratado. Sin endulzante. Imágenes referenciales."
+                },
+                {
+                  "id": 406,
+                  "name": "Mango Dragon Fruit Refresher",
+                  "price": "S/13.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANGO_DRAGON_FRUIT_REFRESHER_V2.png",
+                  "description": "Bebida elaborada con concentrado de café verde sabor a mango, mezclado con pitahaya deshidratada. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 407,
+                  "name": "Mango Dragon FruitLemonade Refresher",
+                  "price": "S/14.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/MANGO_DRAGON_FRUIT_LEMONADE_REFRESHER_V2.png",
+                  "description": "Bebida elaborada con extracto de grano verde de café, mezclado con limonada y pitahaya. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 408,
+                  "name": "Dragon Drink",
+                  "price": "S/15.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/DRAGON_DRINK_V2.png",
+                  "description": "Refrescante bebida hecha a base de Pitahaya, mango, bebida vegetal de coco y cubos de hielo. Imágenes referenciales"
+                }
+              ]
+            },
+            {
+              "id": 5,
+              "type": "Otras bebidas calientes",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/CHOCOLATE_CALIENTE_V3.png",
+              "description": "Variedad de bebidas calientes.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 501,
+                  "name": "Chocolate caliente",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLATE_CALIENTE_V2.png",
+                  "description": "Clásico chocolate caliente con leche vaporizada y salsa de chocolate. Sin endulzantes adicionales. Imágenes referenciales."
+                },
+                {
+                  "id": 502,
+                  "name": "Té Chai Teavanna",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_CHAI_TEAVANNA_V2.png",
+                  "description": "Té filtrante con especies como té negro, jengibre, pimienta, canela que ofrecen un sabor ligeramente picante. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 503,
+                  "name": "Té Hibiscus Teavanna",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_HIBISCUS_TEAVANNA_V2.png",
+                  "description": "Té filtrante con escencia de flores, canela, manzana, azucar de papaya y mango, ojas de blackberry y pétalos de rosas. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 504,
+                  "name": "Té Mint Citrus Teavanna",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_MINT_CITRUS_TEAVANNA_V2.png",
+                  "description": "Té verde filtrante con limón, verbena y menta. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 505,
+                  "name": "Té Chamomile Teavanna",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_CHAMOLINE_TEAVANNA_V2.png",
+                  "description": "Té filtrante con escencia de manzanilla. Sin endulzantes. Imágenes referenciales."
+                }
+              ]
+            },
+            {
+              "id": 6,
+              "type": "Otras bebidas frías",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/STRAWBERRY_GREEN_TEA_V3.png",
+              "description": "Variedad de bebidas frías.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 601,
+                  "name": "Jugo de Espinaca y Manzana",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/JUGO_DE_ESPINACA_Y_MANZANA_V2.png",
+                  "description": "Mezcla de jugos de espinaca, manzana y kion, prensado al frío. Sin endulzantes."
+                },
+                {
+                  "id": 602,
+                  "name": "Jugo de Piña y Manzana",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/JUGO_DE_PI%C3%91A_Y_MANZANA_V2.png",
+                  "description": "Mezcla de jugos de piña, limón hierba buena y manzana prensado al frío. Sin endulzantes."
+                },
+                {
+                  "id": 603,
+                  "name": "Té Mint Citrus Teavanna helado",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_MINT_CITRUS_TEAVANNA_HELADO_V2.png",
+                  "description": "Té verde filtrante frío con limón, verbena y menta. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 604,
+                  "name": "Té Hibiscus Teavanna helado",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_HIBISCUS_TEAVANNA_HELADO_V2.png",
+                  "description": "Té filtrante frío con escencia de flores, canela, manzana, azucar de papaya y mango, ojas de blackberry y pétalos de rosas. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 605,
+                  "name": "Té Chamoline Teavanna helado",
+                  "price": "S/9.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/TE_CHAMOLINE_TEAVANNA_HELADO_V2.png",
+                  "description": "Té filtrante frío con escencia de manzanilla. Sin endulzantes. Imágenes referenciales."
+                },
+                {
+                  "id": 606,
+                  "name": "Chocolate helado",
+                  "price": "S/13.00",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHOCOLATE_HELADO_V2.png",
+                  "description": "Clásico chocolate caliente con leche fría, cubos de hielo y salsa de chocolate. Sin endulzantes adicionales. Imágenes referenciales."
+                }
+              ]
+            },
+            {
+              "id": 7,
+              "type": "Shaken Espresso",
+              "image": "https://www.starbucks.pe/Multimedia/subsecciones/ICED_AVELLANA_OATMILK_SHAKEN_ESPRESSO_V1.png",
+              "description": "Espresso agitado y revitalizante.",
+              "category": "Bebidas",
+              "subtypes": [
+                {
+                  "id": 701,
+                  "name": "Brown Sugar Shaken Espresso Frio con Bebida de Avena",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/BROWN_SUGAR_FRIO_SHAKEN_EXPRESSO_CON_BEBIDA_DE_AVENA_202303131838327498.PNG",
+                  "description": "Bebida helada hecha a base de espresso, jarabe de azúcar morena y canela en polvo completada con bebida de avena y cubos de hielo."
+                },
+                {
+                  "id": 702,
+                  "name": "Avellana Shaken Espresso Frío",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ICED_AVELLANA_OATMILK_SHAKEN_ESPRESSO_ECOMMERCE.png",
+                  "description": "Bebida intensa de café espresso con jarabe de avellanas y cubos de hielo con bebida de avena. Imágenes referenciales."
+                },
+                {
+                  "id": 703,
+                  "name": "Chocolate Shaken Espresso Frío",
+                  "price": "S/16.50",
+                  "urlimage": "https://www.starbucks.pe/Multimedia/productos/ICED_CHOCOLATE_OATMILK_SHAKEN_ESPRESSO_ECOMMERCE.png",
+                  "description": "Bebida intensa de café espresso con salsa mocha y cubos de hielo con bebida de avena. Imágenes referenciales."
+                }
+              ]
+            }
         ]
       },
       {
-        "name": "Alimentos",
+        "name": "ALIMENTOS",
         "products": [
-          {
-            "id": 3,
-            "type": "Pastelito",
-            "image": "https://via.placeholder.com/150",
-            "description": "Pastelito fresco.",
-            "category": "Alimentos"
-          }
+            {
+                "id": 8,
+                "type": "Pastries",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/MUFFIN_DE_NARANJA_Y_CHOCOCHIPS_V3.png",
+                "description": "Deliciosos pasteles y panes.",
+                "category": "Alimentos",
+                "subtypes": [
+                  {
+                    "id": 801,
+                    "name": "Muffin Red Velvet",
+                    "price": "S/10.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/MUFFIN_RED_VELVET_V3.png",
+                    "description": "Muffin sabor a red velvet cubierto con frosting de queso crema con chantillí. Imágenes referenciales."
+                  },
+                  {
+                    "id": 802,
+                    "name": "Galleta Red Velvet",
+                    "price": "S/6.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/GALLETA_RED_VELVET_V3.png",
+                    "description": "Galleta sabor a red velvet con trozos de chocolate blanco. Imágenes referenciales."
+                  },
+                  {
+                    "id": 803,
+                    "name": "Banana Bread",
+                    "price": "S/10.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/BANANA_BREAD_202405290954349522.PNG",
+                    "description": "Biscocho a base plátanos y frutos secos."
+                  },
+                  {
+                    "id": 804,
+                    "name": "Muffin de Naranja",
+                    "price": "S/9.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/MUFFIN_DE_NARANJA_Y_CHOCOCHIPS_V2.png",
+                    "description": "Muffin realizado con harina de trigo, aceite vegetal, huevos, jugo de naranja, ralladura de naranja, cobertura bitter, margarina, azucar, escencia de vainilla y naranja. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 805,
+                    "name": "Keke de zanahoria",
+                    "price": "S/9.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/KEKE_DE_ZANAHORIA_V2.png",
+                    "description": "Keke elaborado con harina, azucar, manteca, ralladura de zanahoria, trozos de pecanas y con frostry zona superior. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 806,
+                    "name": "Galleta cranberry",
+                    "price": "S/6.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/GALLETA_DE_CRANBERRIES_V2.png",
+                    "description": "Galleta elaborada con avena, harina de trigo, manteca, huevos, escencia de vainilla y cranberry. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 807,
+                    "name": "Keke de limón",
+                    "price": "S/9.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/KEKE_DE_LIMON_V2.png",
+                    "description": "Keke elaborado con harina, azucar, manteca, escencia de limón y con frostry zona superior. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 808,
+                    "name": "Galleta de chocochips",
+                    "price": "S/6.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/GALLETA_DE_CHOCOCHIPS_V2.png",
+                    "description": "Galleta elaborada con harina de trigo, azucar blanca y rubia, margarina, cobertura de chocolate, huevos, leche, sal, jengibre y escencia de vainilla. Porción invididual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 809,
+                    "name": "Muffin de berries",
+                    "price": "S/9.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/MUFFIN_DE_BERRIES_V2.png",
+                    "description": "Muffin realizado con harina de trigo, yogurt natural, huevos, aceite vegetal, azucar, leche, margarina, coco fino, sal, escencia de blueberries y cremor tartaro. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 810,
+                    "name": "Egg Bites de Jamón y Queso",
+                    "price": "S/9.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/Egg_Bites_Jamon_Y_Queso_V1.png",
+                    "description": "Pack de 2 batidos de huevos al vapor. Pruébalo con trozos jamón de cerdo y queso. Porción individual. Imágenes referenciales."
+                  }
+                ]
+            },
+            {
+                "id": 9,
+                "type": "Postres",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/CHEESECAKE_DE_CHOCOLATE_V3.png",
+                "description": "Postres variados y deliciosos.",
+                "category": "Alimentos",
+                "subtypes": [
+                  {
+                    "id": 901,
+                    "name": "Crocante de manzana vegetal",
+                    "price": "S/15.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/CROCANTE_DE_MANZANA_VEGETAL_202303071258380326.PNG",
+                    "description": "Relleno de manzana mezclado con castañas y pecanas, endulzado con panela, envuelto en una dulce masa de harina de trigo y cubierta con crumble vegano con hojuelas de avena. Imágenes referenciales."
+                  },
+                  {
+                    "id": 902,
+                    "name": "Cake Pop Vainilla",
+                    "price": "S/6.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/Cake_Pop_V1.png",
+                    "description": "Bizcocho sabor a vainilla relleno de manjar y bañado en chocolate de cobertura con grageas. Sin azúcar adicional. Imágenes referenciales."
+                  },
+                  {
+                    "id": 903,
+                    "name": "Cheesecake de Arándanos",
+                    "price": "S/15.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHEESECAKE_DE_ARANDANOS_V2.png",
+                    "description": "Cheesecake con base de galleta y couliz de fresa y arándanos. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 904,
+                    "name": "Brownie de Cookies & Cream",
+                    "price": "S/8.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/BROWNIE_DE_COOKIES_AND_CREAM_V2.png",
+                    "description": "Clásico brownie sabor chocolate, relleno de fudgecon trozos de galletas cookies & creme. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 905,
+                    "name": "Torta de chocolate",
+                    "price": "S/12.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/TORTA_DE_CHOCOLATE_V2.png",
+                    "description": "Torta de chocolate, con fudge superior y trozos pequeños de chocolate. Porción individual. Imágenes referenciales."
+                  }
+                ]
+            },
+            {
+                "id": 10,
+                "type": "Sandwiches",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/SANDWICH_DE_PAVITA_Y_QUESO_V3.png",
+                "description": "Sandwiches frescos y sabrosos.",
+                "category": "Alimentos",
+                "subtypes": [
+                  {
+                    "id": 1001,
+                    "name": "Sandwich de pavo",
+                    "price": "S/15.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_DE_PAVO_202311102128423681.PNG",
+                    "description": "Delicioso sándwich de pavo en pan ciabatta, mayonesa, tomate y aderezo a base de especias."
+                  },
+                  {
+                    "id": 1002,
+                    "name": "Croissant de mantequilla",
+                    "price": "S/6.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/CROISSANT_DE_MANTEQUILLA_V2.png",
+                    "description": "Croissant de mantequilla. Porción individual.Imágenes referenciales."
+                  },
+                  {
+                    "id": 1003,
+                    "name": "Croissant jamón del país y queso",
+                    "price": "S/15.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/croissant_jamon_pais_v3.png",
+                    "description": "Delicioso sandwich realizado con nuestro croissant francés horneado en tienda, relleno con láminas de jamón del país y queso andino."
+                  },
+                  {
+                    "id": 1004,
+                    "name": "Croissant jamón inglés y queso",
+                    "price": "S/15.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/croissant_jamon_ingles_v3.png",
+                    "description": "Delicioso sandwich realizado con nuestro croissant francés horneado en tienda, relleno con láminas de jamón inglés y queso andino."
+                  },
+                  {
+                    "id": 1005,
+                    "name": "Sandwich Pavita & queso",
+                    "price": "S/13.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_DE_PAVITA_Y_QUESO_V2.png",
+                    "description": "Sándwich elaborado con pan tipo avena, jamón de pavita y queso cheddar. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1006,
+                    "name": "Sandwich Pavita, queso & espinaca",
+                    "price": "S/14.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_DE_PAVITA_QUESO_Y_ESPINACA_V2.png",
+                    "description": "Sándwich elaborado con pan de semillas, relleno con jamón de pavita, queso gouda y espinaca. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1007,
+                    "name": "Sandwich Brioche campesino",
+                    "price": "S/15.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_BRIOCHE_CAMPESINO_V2.png",
+                    "description": "Contundente sándwich con jamón de pierna de cerdo, queso crema y jalea de rocoto. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1008,
+                    "name": "Empanada de lomo",
+                    "price": "S/9.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/EMPANADA_DE_LOMO_V2.png",
+                    "description": "Clásica empanada relleno de jugoso lomo en trozos, ají y cebolla cortada en juliana. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1009,
+                    "name": "Empanada de ají de pollo",
+                    "price": "S/9.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/EMPANADA_DE_AJI_DE_GALLINA_V2.png",
+                    "description": "Empanada rellena con ají de pollo. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1010,
+                    "name": "Sandwich Panino vesubio",
+                    "price": "S/12.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_PANINO_VESUBIO_V2.png",
+                    "description": "Sándwich elaborado con pan panini, jamón de cerdo y queso gouda. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1011,
+                    "name": "Sandwich Chicken panino",
+                    "price": "S/13.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_CHICKEN_PANINO_V2.png",
+                    "description": "Sándwich elaborado en pan panini integral, con pollo deshilachado, apio picado, jamón de cerdo y queso. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1012,
+                    "name": "Sandwich Chicken ciabatta",
+                    "price": "S/13.50",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_CHICKEN_CIABATTA_V2.png",
+                    "description": "Sándwich elaborado con pan ciabatta, pollo deshilachado y mezclado con mayonesa y apio picado. Porción individual. Imágenes referenciales."
+                  },
+                  {
+                    "id": 1013,
+                    "name": "Sandwich triple",
+                    "price": "S/15.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SANDWICH_TRIPLE_V2.png",
+                    "description": "Sándwich triple elaborado con pan marmoleado, relleno de queso, jamón de cerdo y pollo deshilachado con mayonesa. Porción individual. Imágenes referenciales."
+                  }
+                ]
+            }
         ]
-      }
+    },
+    {
+        "name": "MERCH y CAFÉ EN GRANO",
+        "products": [
+            {
+                "id": 11,
+                "type": "Café en Grano",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/CAFE_EN_GRANO_202406041537408889.PNG",
+                "description": "Café en grano de alta calidad.",
+                "category": "Merch y Café en Grano",
+                "subtypes": [
+                  {
+                    "id": 1101,
+                    "name": "Perú",
+                    "price": "S/37.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PERU_202405130911227975.PNG",
+                    "description": "Bolsa de café en grano de 250 gr. Notas herbales y a frutos secos principalmente la almendra; con tostado medio, acidez media y cuerpo completo."
+                  },
+                  {
+                    "id": 1102,
+                    "name": "Espresso Roast",
+                    "price": "S/37.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/ESPRESSO_250_GR_202405130906146272.PNG",
+                    "description": "Bolsa de café en grano de 250 gr. Café con pronunciado sabor a naranja, lima y cítricos; con tostado medio, acidez alta y cuerpo medio."
+                  },
+                  {
+                    "id": 1103,
+                    "name": "Verona",
+                    "price": "S/37.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/VERONA_202405130913058459.PNG",
+                    "description": "Bolsa de café en grano de 250 gr. Café balanceado con notas a chocolate dark o cocoa; con tostado alto, acidez baja y cuerpo completo."
+                  },
+                  {
+                    "id": 1104,
+                    "name": "Espresso Christmas 250 gr.",
+                    "price": "S/39.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/ESPRESSO_CHRISTMAS_250_GR_202411191247182446.PNG",
+                    "description": "Esta mezcla es para los amantes del espresso: un café tostado indulgente con notas de especias especiadas, vainilla ahumada y ciruelas azucaradas. Por primera vez, estamos agregando granos de Sidama de Etiopía secados al sol a esta mezcla de café de Costa Rica y Sumatra."
+                  },
+                  {
+                    "id": 1105,
+                    "name": "Christmas blend 250 gr.",
+                    "price": "S/39.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/CHRISTMAS_BLEND_250_GR_202411191318206465.PNG",
+                    "description": "De regreso y lleno de alegría, Starbucks® Christmas Blend está aquí para alegrar cualquier celebración. Nuestra receta histórica combina granos de Sumatra perfectamente envejecidos con granos tostados oscuros de Guatemala, Colombia y Papúa Nueva Guinea."
+                  },
+                  {
+                    "id": 1106,
+                    "name": "Sumatra",
+                    "price": "S/37.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/SUMATRA_202405130912150918.PNG",
+                    "description": "Bolsa de café en grano de 250 gr. Café con aroma herbal. Tostado Dark, cuerpo completo y acidez baja."
+                  },
+                  {
+                    "id": 1107,
+                    "name": "Colombia 250 gr.",
+                    "price": "S/37.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/CAFE_COLOMBIA_250GR_V2.png",
+                    "description": "Bolsa de café en grano de 250 gr. Café balanceado con aromas floral. Tostado medio, cuerpo medio y acidez alta."
+                  },
+                  {
+                    "id": 1108,
+                    "name": "Komodo Dragon",
+                    "price": "S/37.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/KOMODO_DRAGON_202405130908237553.PNG",
+                    "description": "Bolsa de café en grano de 250 gr. Café descafeinado terroso y con capas de notas a hierbas frescas, y especias persistentes. Cuerpo completo, acidez baja y tostado Dark."
+                  }
+                ]
+            },
+            {
+                "id": 12,
+                "type": "Merch",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/MERCH_202303071515397584.PNG",
+                "description": "Productos de merchandising.",
+                "category": "Merch y Café en Grano",
+                "subtypes": [
+                  {
+                    "id": 1201,
+                    "name": "Prensa Francesa",
+                    "price": "S/160.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PRENSA_FRANCESA_202405021321472958.PNG",
+                    "description": "Disfruta tu café con nuestra Prensa Francesa 34 onzas."
+                  },
+                  {
+                    "id": 1202,
+                    "name": "Prensa Cold Brew",
+                    "price": "S/160.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PRENSA_COLD_BREW_202405021259531355.PNG",
+                    "description": "Disfruta tu café intenso con nuestra Prensa Cold Brew."
+                  },
+                  {
+                    "id": 1203,
+                    "name": "Prensa Pour Over",
+                    "price": "S/80.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PRENSA_POUR_OVER_202405021305439701.PNG",
+                    "description": "Disfruta tu café con nuestra Prensa Pour Over."
+                  },
+                  {
+                    "id": 1204,
+                    "name": "Vaso Blanco Reusable Sirena Blanca - 16 oz",
+                    "price": "S/25.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/VASO_REUSABLE_BLANCO_16OZ_202303071248009818.PNG",
+                    "description": "011129110 - Vaso Blanco Reusable Sirena Blanca - 16 ox"
+                  },
+                  {
+                    "id": 1205,
+                    "name": "Vaso blanco reusable Sirena verde - 16 oz",
+                    "price": "S/20.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/VASO_REUSABLE_BLANCO_SIRENA_VERDE_16OZ_202303071252078126.PNG",
+                    "description": "Vaso blanco reusable Sirena verde - 16 oz"
+                  },
+                  {
+                    "id": 1206,
+                    "name": "Vaso Frío Reusable 24 oz",
+                    "price": "S/25.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/VASO_REUSABLE_FRIO_24OZ_202303071254370179.PNG",
+                    "description": "Vaso Frío Reusable 24oz"
+                  },
+                  {
+                    "id": 1207,
+                    "name": "Llavero Tumbler",
+                    "price": "S/40.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/LLAVERO_NEGRO_202410301319569983.PNG",
+                    "description": ""
+                  }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "PACKS Y BOXES",
+        "products": [
+            {
+                "id": 13,
+                "type": "Coffee for Share",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/PACK_COFFEE_MIXTO_V3.png",
+                "description": "Café para compartir.",
+                "category": "Packs y Boxes",
+                "subtypes": [
+                  {
+                    "id": 1301,
+                    "name": "Coffee Traveler",
+                    "price": "S/60.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/COFFEE_TRAVELER_V2.png",
+                    "description": "Llegó el pack ideal para tus reuniones, el Coffee traveler contiene 10 bebidas de Americano, Latte o Chocolate caliente. Imágenes referenciales"
+                  },
+                  {
+                    "id": 1302,
+                    "name": "Pack Coffee Mixto",
+                    "price": "S/120.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PACK_COFFEE_MIXTO_V2.png",
+                    "description": "El pack ideal para tus reuniones, el Pack Coffee mixto contiene 10 bebidas de Americano o Latte, 5 galletas de chocochips y 5 sandiwich Panino Vesubio. Imágenes referenciales"
+                  },
+                  {
+                    "id": 1303,
+                    "name": "Pack Coffee Sandwich",
+                    "price": "S/135.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PACK_COFFEE_SANDWICH_V2.png",
+                    "description": "Pack ideal para tus reuniones, el Coffee Traveler contiene 10 bebidas Americano o Latte acompañado de 10 Sándwiches. Imágenes referenciales"
+                  },
+                  {
+                    "id": 1304,
+                    "name": "Pack Coffee Galleta",
+                    "price": "S/95.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/PACK_COFFEE_GALLETA_V2.png",
+                    "description": "Pack ideal para tus reuniones, el Coffee Traveler contiene 10 bebidas Americano o Latte acompañado de 10 galletas. Imágenes referenciales."
+                  }
+                ]
+            },
+            {
+                "id": 14,
+                "type": "Desayunos",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/DESAYUNO_PARA_DOS_V4.png",
+                "description": "Desayunos completos.",
+                "category": "Packs y Boxes",
+                "subtypes": [
+                  {
+                    "id": 1401,
+                    "name": "Dúo Desayuno Tamaño",
+                    "price": "S/11.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/DUO_DESAYUNO_HOLIDAY_202311141341420916.PNG",
+                    "description": "¡Tu desayuno favorito! Disfruta de un Americano, Latte, Vainilla Latte o Chocolate Caliente y combínalo con un Croissant de mantequilla, Sandwich Panino Vesubio o Sandwich Pavo y queso. Imágenes referenciales. Válido del 02.01.2024 AL 06.01.2025."
+                  },
+                  {
+                    "id": 1402,
+                    "name": "Desayuno Para Dos",
+                    "price": "S/30.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/DESAYUNO_PARA_DOS_V4.png",
+                    "description": "¡Inicia tu mañana con un desayuno para dos! Elige dos de tus bebidas favoritas + dos sándwiches y comparte un momento especial. Válido del 02.01.2024 AL 25.08.2024 o hasta agotar stock de 10 promociones."
+                  }
+                ]
+            },
+            {
+                "id": 15,
+                "type": "Antojos de la tarde",
+                "image": "https://www.starbucks.pe/Multimedia/subsecciones/PACK_ANTOJOS_V3.png",
+                "description": "Delicias para la tarde.",
+                "category": "Packs y Boxes",
+                "subtypes": [
+                  {
+                    "id": 1501,
+                    "name": "Muffins 4 share",
+                    "price": "S/32.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/Muffin_4_share_v1.png",
+                    "description": "¡Compartir siempre es mejor!. Elige 4 muffins de los sabores que más te gustan. Imágenes referenciales. Válido del 02.01.2024 al 25.08.2024."
+                  },
+                  {
+                    "id": 1502,
+                    "name": "Momentos Dulces",
+                    "price": "S/14.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/Duo_Engreimiento_V5.png",
+                    "description": "¡Es momento de engreírnos! Arma tu Dúo, elige tu bebida favorita entre 1 Vainilla Latte, Chocolate , Mocha Frappuccino o Chocolate Creme Frappuccino o Algarrobina Frappuccino y combínalo con 1 galleta, keke o muffin. Imágenes referenciales. Válido del 02.01.2024 AL 25.08.2024."
+                  },
+                  {
+                    "id": 1503,
+                    "name": "Sweet & Share",
+                    "price": "S/26.00",
+                    "urlimage": "https://www.starbucks.pe/Multimedia/productos/Sweet_Share_V1.png",
+                    "description": "¡Compartir siempre es mejor!. Elige 2 bebidas entre Mocha Frappuccino, Caramel Frappuccino o Café Frappuccino y combínalo con 1 keke y 1 galleta a elección. Imágenes referenciales. Válido del 02.01.2024 al 25.08.2024. Stock según disponibilidad de tienda."
+                  }
+                ]
+            }
+        ]
+    }
     ]
   }

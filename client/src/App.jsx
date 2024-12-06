@@ -28,7 +28,7 @@ function App() {
         {/* Son rutas publicas para el mundo */}
         <Route path="/" element={<HomePage/>} />
         <Route path="/menu" element={<MenuPage/>} />
-        <Route path="/menu/:category/:name" element={<ProductPage/>} />
+        <Route path="/menu/:category/:type" element={<ProductPage/>} />
         <Route path="/rewards" element={<Rewards/>} />
         <Route path="/tiendas" element={<TiendasPage/>} />
 
