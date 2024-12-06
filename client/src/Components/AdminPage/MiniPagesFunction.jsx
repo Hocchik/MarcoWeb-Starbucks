@@ -10,6 +10,7 @@ import { useAuth } from "../../context/AuthContextAdmin";
 function MiniPages(pathname){
     const  {logout} = useAuth()
 
+
     var page = <MiniPageGen/>;
     switch(pathname){
         case '/': page = <MiniPageGen/>; break;

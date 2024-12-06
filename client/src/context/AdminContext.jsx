@@ -3,7 +3,11 @@ import {
     getClients, createClient,updateClient, deleteClient,
     getProducts, createProduct, updateProduct, deleteProduct,
     getPromos, createPromo, updatePromo, deletePromo,
-    getReportesCateProducts,
+    getReportesCateProducts, getReportesDispersionProducts,
+    getGraficoTendencia,
+    getGraficoPie,
+    getGraficoLineas,
+    getGraficoBarra
 } from '../api/admindata'
 
 const AdmContext = createContext();
@@ -23,6 +27,11 @@ export function AdminContext({ children }){
     const [promos, setPromos] = useState([]);
     const [errors, setErrors] = useState([]);
     const [reportesCatePro, setReportesCatePro] = useState([])
+    const [reportesDisperPro, setReportesDisperPro] = useState([])
+    const [graficoTendencia, setGraficoTendencia] = useState([])
+    const [graficoPie, setGraficoPie] = useState([])
+    const [graficoLineas, setGraficoLineas] = useState([])
+    const [graficoBarra, setGraficoBarra] = useState([])
 
 //Gets
 const getClientes =  async () => {
@@ -151,13 +160,63 @@ const getReporteCategoProducts = async () => {
     }
 }
 
+const getReportesDisperProducts = async () => {
+    try {
+        const res = await getReportesDispersionProducts()
+        setReportesDisperPro(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const getGraficodeTendencia = async () => {
+    try {
+        const res = await getGraficoTendencia()
+        setGraficoTendencia(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const getGraficodePie = async () => {
+    try {
+        const res = await getGraficoPie()
+        setGraficoPie(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const getGraficodeLineas = async () => {
+    try {
+        const res = await getGraficoLineas()
+        setGraficoLineas(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+const getGraficodeBarra = async () => {
+    try {
+        const res = await getGraficoBarra()
+        setGraficoBarra(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
 
     return (
         <AdmContext.Provider value={{
             clients, getClientes, updateClientes, deleteClientes, createClientes,
             products, getProductos, updateProductos, deleteProductos, createProductos,
             promos, getPromociones, updatePromociones, deletePromociones, createPromociones,
-            reportesCatePro, getReporteCategoProducts
+            reportesCatePro, getReporteCategoProducts,
+            reportesDisperPro, getReportesDisperProducts,
+            graficoTendencia, getGraficodeTendencia,
+            graficoPie, getGraficodePie,
+            graficoLineas, getGraficodeLineas,
+            graficoBarra, getGraficodeBarra,
         }}>
             { children }
         </AdmContext.Provider>

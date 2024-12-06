@@ -4,7 +4,13 @@ import {
     getProducts, createProduct, updateProduct, deleteProduct, 
     getUsers, createUser, updateUser, deleteUser,
     getPromos, createPromo, updatePromo,  deletePromo,
-    getReportesCateProducts
+    getReportesCateProducts, getReportesDispersionProducts,
+    getVentas,
+    createVenta,
+    getGraficoTendencia,
+    getGraficoPie,
+    getGraficoLineas,
+    getGraficoBarras
 } from "../controllers/Admininfo.controller.js";
 
 
@@ -30,7 +36,16 @@ router.post('/createpromo', createPromo);
 router.put('/updatepromo/:id', updatePromo);
 router.delete('/deletepromo/:id', deletePromo);
 
+//Ventas
+router.get('/getventas', getVentas);
+router.post('/createventa', createVenta);
+
 //Reportes
 router.get('/getreportescateproducts', getReportesCateProducts)
+router.get('/getreportesdispersionproducts', getReportesDispersionProducts)
+router.get('/getgraficotendencia', getGraficoTendencia)
+router.get('/getgraficopie', getGraficoPie)
+router.get('/getgraficolineas', getGraficoLineas)
+router.get('/getgraficobarras', getGraficoBarras)
 
 export default router

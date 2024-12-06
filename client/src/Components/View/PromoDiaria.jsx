@@ -7,7 +7,7 @@ function PromoDiaria() {
 
 const day =  new Date().getDay();
 
-    const PromoToday = Promos[5];
+    const PromoToday = Promos[day-1];
 
     console.log(PromoToday.products)
 
@@ -18,7 +18,7 @@ const day =  new Date().getDay();
       <div className="mt-8 mr-1 md:mt-0 w-2/5">
           <h1 className="text-green-600 text-4xl md:text-6xl font-bold mb-4">Promo {PromoToday.dia}</h1>
           <p className="text-white-600 text-lg md:text-xl mb-4">{PromoToday.description}</p>
-          <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-md">Ver recomendaciones</button>
+          
       </div>
       <div className="w-3/5 ml-20 flex flex-col md:flex-row items-center">
       {PromoToday.products.map((product) => (

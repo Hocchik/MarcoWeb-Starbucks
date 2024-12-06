@@ -88,7 +88,7 @@ const Dashboard = ({ title, report, data, chartType }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Legend />
-          <Line type="monotone" dataKey="ventas" stroke={colors.line} />
+          <Line type="monotone" dataKey="cantidad" stroke={colors.line} />
         </LineChart>
       )}
       {chartType === 'bar' && (
@@ -105,20 +105,20 @@ const Dashboard = ({ title, report, data, chartType }) => {
         <PieChart width={500} height={300}>
           <Pie
             data={data}
-            dataKey="ventas"
-            nameKey="name"
+            dataKey="cantidad"
+            nameKey="type"
             cx="50%"
             cy="50%"
             outerRadius={80}
             fill={colors.pie}
             label
           />
-          <Tooltip />
+          <Tooltip/>
         </PieChart>
       )}
       {chartType === 'radial' && (
         <RadialBarChart width={500} height={300} innerRadius="10%" outerRadius="80%" data={data}>
-          <RadialBar minAngle={15} label={{ fill: '#fff', position: 'inside' }} background clockWise={true} dataKey="ventas" fill={colors.radial} />
+          <RadialBar minAngle={15} label={{ fill: '#fff', position: 'inside' }} background clockWise={true} dataKey="cantidad" fill={colors.radial} />
           <Tooltip />
         </RadialBarChart>
       )}
@@ -129,16 +129,16 @@ const Dashboard = ({ title, report, data, chartType }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <Tooltip />
           <Legend />
-          <Area type="monotone" dataKey="ventas" stroke={colors.area} fill={colors.area} />
+          <Area type="monotone" dataKey="cantidad" stroke={colors.area} fill={colors.area} />
         </AreaChart>
       )}
       {chartType === 'scatter' && (
         <ScatterChart width={500} height={300} margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
           <CartesianGrid />
-          <XAxis dataKey="name" type="category" />
+          <XAxis dataKey="name" type="name" />
           <YAxis />
           <Tooltip />
-          <Scatter name="Clientes" data={data} fill={colors.scatter} />
+          <Scatter name="cantidad" dataKey="cantidad"  data={data} fill={colors.scatter} />
         </ScatterChart>
       )}
       <Typography variant="body2" gutterBottom>
@@ -206,22 +206,26 @@ const Dashboard = ({ title, report, data, chartType }) => {
 const MiniPageReportes = () => {
   
   const {reportesCatePro, getReporteCategoProducts} = useAdmin()
-  
+  const {graficoTendencia, getGraficodeTendencia} = useAdmin()
+  const {graficoPie, getGraficodePie} = useAdmin()
+  const {graficoLineas, getGraficodeLineas} = useAdmin()
+  const {graficoBarra, getGraficodeBarra} = useAdmin()
+
   useEffect(() =>{
     getReporteCategoProducts()
+    getGraficodeTendencia()
+    getGraficodePie()
+    getGraficodeLineas()
+    getGraficodeBarra()
   },[])
 
+  console.log(graficoBarra)
 
   const dashboards = [
     {
-      title: 'Ventas de Café - Enero',
+      title: 'Ventas en la Semana - Semana 1 Diciembre',
       report: '',
-      data: [
-        { name: 'Semana 1', ventas: 4000 },
-        { name: 'Semana 2', ventas: 3000 },
-        { name: 'Semana 3', ventas: 2000 },
-        { name: 'Semana 4', ventas: 2780 },
-      ],
+      data: graficoLineas,
       chartType: 'line', // Gráfico de líneas
     },
     {
@@ -231,45 +235,22 @@ const MiniPageReportes = () => {
       chartType: 'bar', // Gráfico de barras
     },
     {
-      title: 'Descuentos Aplicados - Marzo',
-      report: 'Reporte de descuentos aplicados...',
-      data: [
-        { name: 'Descuento 1', ventas: 1500 },
-        { name: 'Descuento 2', ventas: 2500 },
-        { name: 'Descuento 3', ventas: 3500 },
-      ],
+      title: 'Ventas por producto - Diciembre',
+      report: '',
+      data: graficoPie,
       chartType: 'pie', // Gráfico circular
     },
     {
-      title: 'Establecimientos Más Vendidos - Abril',
-      report: 'Los establecimientos que más venden...',
-      data: [
-        { name: 'Establecimiento A', ventas: 6000 },
-        { name: 'Establecimiento B', ventas: 7000 },
-        { name: 'Establecimiento C', ventas: 8000 },
-      ],
-      chartType: 'radial', // Gráfico radial
+      title: 'Top 5 productos más vendidos - Diciembre',
+      report: '',
+      data: graficoBarra,
+      chartType: 'bar', // Gráfico bar
     },
     {
-      title: 'Tendencia de Ventas - Mayo',
-      report: 'Tendencia de ventas en mayo...',
-      data: [
-        { name: 'Semana 1', ventas: 4000 },
-        { name: 'Semana 2', ventas: 6000 },
-        { name: 'Semana 3', ventas: 8000 },
-        { name: 'Semana 4', ventas: 9000 },
-      ],
+      title: 'Ventas por Dia - Diciembre',
+      report: '',
+      data: graficoTendencia,
       chartType: 'area', // Gráfico de área
-    },
-    {
-      title: 'Clientes Nuevos - Junio',
-      report: 'Reporte de nuevos clientes...',
-      data: [
-        { name: 'Mes 1', ventas: 2000 },
-        { name: 'Mes 2', ventas: 3500 },
-        { name: 'Mes 3', ventas: 5000 },
-      ],
-      chartType: 'area', // Gráfico de dispersión
     },
   ];
 

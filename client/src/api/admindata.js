@@ -23,6 +23,10 @@ export const deletePromo = (promo) => axios.delete(`/deletepromo/${promo._id}`, 
 
 //Reportes
 export const getReportesCateProducts = () => axios.get('/getreportescateproducts')
-
+export const getReportesDispersionProducts = () => axios.get('/getreportesdispersionproducts')
+export const getGraficoTendencia = () => axios.get('/getgraficotendencia')
+export const getGraficoPie = () => axios.get('/getgraficopie')
+export const getGraficoLineas = () => axios.get('/getgraficolineas')
+export const getGraficoBarra = () => axios.get('/getgraficobarras')
 
 
