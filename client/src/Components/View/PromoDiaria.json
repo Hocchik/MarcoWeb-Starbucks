@@ -1,0 +1,151 @@
+{
+    "Dias": [
+        {
+            "dia": "Lunes",
+            "description": "¡Comienza tu semana con una explosión de sabor! Prueba un café macerado durante 20 horas, que ofrece frescura y un sabor inigualable. Acompáñalo con un espresso equilibrado con chocolate y leche cremosa, adornado con nata montada. Esta combinación es perfecta para transformar tu lunes en un día especial. ¡Atrévete a disfrutar y haz de este lunes un momento único!",
+            "id": 1,
+            "products": [
+                {
+                    "id":11,
+                    "name": "Mocha",
+                    "category": "Bebidas",
+                    "type": "Espresso Caliente",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Caffe%CC%80%20Mocha.jpeg.webp?itok=IX7CiRNJ"
+                },
+                {
+                    "id":12,
+                    "name": "Cold Brew",
+                    "category": "Bebidas",
+                    "type": "Espresso Caliente",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Cold%20Brew%20Coffee%20.jpg.webp?itok=ontTjJnb"
+                }
+            ]
+        },
+        {
+            "dia": "Martes",
+            "description": "Dale un giro delicioso a tu martes! Deja que nuestra tarta de zanahoria, con su suave bizcocho y cobertura de queso crema, te transporte a un mundo de dulzura. Acompáñala con un muffin de arándanos, que combina esponjosidad con jugosos trozos de fruta. No te pierdas la oportunidad de deleitarte con estas maravillas. ¡Ven y disfruta de un momento delicioso que hará que tu martes sea inolvidable!",
+            "id": 2,
+            "products": [
+                {
+                    "id":21,
+                    "name": "Tarta de Zanahoria",
+                    "category": "Alimentos",
+                    "type": "Postres",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2022-03/tartas%20zanahoria.png.webp?itok=ccDHJPsq"
+                },
+                {
+                    "id":22,
+                    "name": "Muffin Arándanos",
+                    "category": "Alimentos",
+                    "type": "Pastries",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2024-04/Muffin%20blueberry.jpg.webp?itok=g-xBNmuY"
+                }
+            ]
+        },
+        {
+            "dia": "Miercoles",
+            "description": "¡Este miércoles, déjate seducir por sabores irresistibles! Saborea nuestra tarta de chocolate, con su suave crema y trozos de bizcocho, todo bañado en un delicioso glaseado. Combínala con un muffin de chocolate esponjoso, lleno de trocitos que aportan una textura crujiente. No te resistas a la tentación; ven y descubre el placer de estas exquisiteces que harán de tu miércoles un día especial.",
+            "id": 3,
+            "products": [
+                {
+                    "id":31,
+                    "name": "Tarta de chocolate",
+                    "category": "Alimentos",
+                    "type": "Postres",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2022-03/tarta%20chocolate.png.webp?itok=9bDwyAC3"
+                },
+                {
+                    "id":42,
+                    "name": "Muffin Chocolate",
+                    "category": "Bebidas",
+                    "type": "Pastries",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2024-04/Muffin%20choco.jpg.webp?itok=NVcDx8M8"
+                }
+            ]
+        },
+        {
+            "dia": "Jueves",
+            "description": "Este jueves, transforma tu tarde con dos frappuccinos decadentes. Elige entre el cremoso Frappuccino Cookies & Cream, con su suave mezcla de nata y trocitos crujientes, o el intenso Frappuccino Java Chip, que combina chocolate y café en un abrazo helado. ¡Ven y haz de tu jueves un día para recordar!",
+            "id": 4,
+            "products": [
+                {
+                    "id":41,
+                    "name": "Frappuccino Mocha Blanco",
+                    "category": "Bebidas",
+                    "type": "Frappucinos",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/White%20Chocolate%20Mocha%20Frappuccino%C2%AE%20.jpeg.webp?itok=0MR57PKL"
+                },
+                {
+                    "id":42,
+                    "name": "Frappuccino Caramelo",
+                    "category": "Bebidas",
+                    "type": "Frappucinos",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Caramel%20Frappuccino%C2%AE%20.jpeg.webp?itok=EAmFehlQ"
+                }
+            ]
+        },
+        {
+            "dia": "Viernes",
+            "description": "¡Este viernes, despierta tus sentidos con una explosión de frescura! Disfruta de un trago helado que combina la vibrante lima con el refrescante café verde, perfecto para revitalizarte y comenzar el fin de semana con energía. Y si prefieres algo más dulce, no te pierdas nuestro elixir de fresa y açaí, que te llevará a un paraíso frutal en cada sorbo. ¡Brinda por el viernes con estas bebidas irresistibles!",
+            "id": 5,
+            "products": [
+                {
+                    "id":51,
+                    "name": "Refresha Cool Lime",
+                    "category": "Bebidas",
+                    "type": "Refreshers",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Cool%20Lime%20Starbucks%20Refresha%C2%AE%20Drink%20.jpeg.webp?itok=TO8jtdSb"
+                },
+                {
+                    "id":52,
+                    "name": "Refresha Strawberry Açai",
+                    "category": "Bebidas",
+                    "type": "Refreshers",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Strawberry%20Acai%20Starbucks%20Refresha%C2%AE%20Drink.jpeg.webp?itok=AzBB7PEI"
+                }
+            ]
+        },
+        {
+            "dia": "Sabado",
+            "description": "¡Es sábado y es el momento perfecto para consentirte! Prueba el delicioso Frappuccino Cookies & Cream, donde cada sorbo es un festín de galletas y crema, o el seductor Frappuccino Java Chip, que te envolverá en su rico sabor a chocolate. No te quedes con las ganas, ven y disfruta de estas delicias que harán de tu sábado una celebración.",
+            "id": 1,
+            "products": [
+                {
+                    "id":61,
+                    "name": "Frappuccino Cookies & Cream",
+                    "category": "Bebidas",
+                    "type": "Frappucinos",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Cookies%20%26%20Cream%20Frappuccino%C2%AE%20.jpeg.webp?itok=U9B2VQAg"
+                },
+                {
+                    "id":62,
+                    "name": "Frappuccino Java Chip",
+                    "category": "Bebidas",
+                    "type": "Frappucinos",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2021-11/Java%20Chip%20Frappuccino%C2%AE.jpeg.webp?itok=WkK4PaSt"
+                }
+            ]
+        },
+        {
+            "dia": "Domingo",
+            "description": "Haz de tu domingo un día especial con nuestra selección de cappuccinos. Disfruta del clásico Cappuccino, con su espresso intenso y espuma cremosa, o refréscate con el Cappuccino Freddo, una combinación de café helado y leche dulce. No dejes pasar la oportunidad de saborear estas exquisiteces. ¡Te esperamos para hacer de tu domingo un momento inolvidable!",
+            "id": 7,
+            "products": [
+                {
+                    "id":71,
+                    "name": "Cappuccino",
+                    "category": "Bebidas",
+                    "type": "Espresso Frío",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2022-03/SBX-UK-MOP-Cappuccino.jpg.webp?itok=FidDttiD"
+                },
+                {
+                    "id":72,
+                    "name": "Cappuccino Freddo",
+                    "category": "Bebidas",
+                    "type": "Espresso Frío",
+                    "image": "https://www.starbucks.es/sites/starbucks-es/files/styles/c10_2_col_text_560x467/public/2022-03/cappuccino%20freddo.png.webp?itok=iBqXrVJJ"
+                }
+            ]
+        }
+    ]
+}

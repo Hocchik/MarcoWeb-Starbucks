@@ -46,7 +46,7 @@ function getPromostoCalendar(){
   useEffect(() =>{
     getPromociones()
     getPromostoCalendar()
-  }, [getPromociones])
+  }, [])
 
 
 

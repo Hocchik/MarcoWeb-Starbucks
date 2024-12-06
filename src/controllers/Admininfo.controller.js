@@ -101,3 +101,32 @@ export const deletePromo = async (req, res) => {
         if(!promo)  return res.status(404).send({success:true, msg:'No se encontro la promocion'})
         return res.sendStatus(204);
 }
+
+
+//Reportes
+export const getReportesCateProducts = async (req, res) => {
+        try {
+        const products = await Product.find({})
+        if(!products) return res.status(400).send({success:true, msg:'No llego'})
+
+        let categorias = [
+                {name:'Bebidas', cantidad:0},
+                {name:'Alimentos', cantidad:0},
+                {name:'Merch y Café', cantidad:0},
+                {name:'Packs y Boxes', cantidad:0}
+        ]
+
+        for (let index = 0; index < products.length; index++) {
+                switch(products[index].category){
+                        case 'Bebidas': categorias[0].cantidad++; break;
+                        case 'Alimentos': categorias[1].cantidad++; break;
+                        case 'Merch y Café en Grano': categorias[2].cantidad++; break;
+                        case 'Packs y Boxes': categorias[3].cantidad++; break;
+                        default: break;
+                }
+        }
+        res.json(categorias);
+        } catch (error) {
+        res.status(500).json({ message: error.message });
+        }     
+}

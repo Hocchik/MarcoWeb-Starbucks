@@ -2,8 +2,13 @@ import Navbar from "../../Components/View/NavBar.jsx";
 import Footer from "../../Components/Footer.jsx";
 import VistaPrincipal from "../../Components/View/VistaPrincipal.jsx";
 import Imagenes from "../../imgs/Imagenes.js";
+import ModalHomePage from "./ModalHomePage.jsx";
+import { useState } from "react";
 
 function HomePage() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
     <Navbar/>
@@ -15,13 +20,18 @@ function HomePage() {
         <div className="mt-8 mr-6 md:mt-0 bans-text">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Más que café, una experiencia.</h1>
           <p className="text-lg md:text-xl mb-4">Un lugar para conectar, compartir y disfrutar de una buena bebida con Starbucks.</p>
-          <button className="hover:opacity-90 text-white font-bold py-2 px-4 rounded-md">Mira nuestro menú</button>
+          <button className="hover:opacity-90 text-white font-bold py-2 px-4 rounded-md" onClick={() => setIsModalOpen(true)}>Aprende más sobre nosotros</button>
         </div>
       </div>
     </div>
+
+    <ModalHomePage
+    isOpen={isModalOpen}
+    onClose={() => setIsModalOpen(false)}
+    />
+
     <VistaPrincipal/>
     <Footer/>
-
     </>
   )
 }

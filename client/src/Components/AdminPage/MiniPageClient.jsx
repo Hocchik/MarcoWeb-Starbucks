@@ -92,7 +92,7 @@ export default function MiniPageClient() {
 
   useEffect(() => {
     getClientes()
-  }, [getClientes])
+  }, [])
 
   return (
     <div className='flex justify-between items-end flex-col'>

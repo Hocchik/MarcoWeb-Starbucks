@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Container,
   Typography,
@@ -29,6 +29,8 @@ import {
 } from 'recharts';
 import PrintIcon from '@mui/icons-material/Print';
 import EmailIcon from '@mui/icons-material/Email';
+import { useAdmin } from '../../context/AdminContext.jsx';
+
 
 // Estilo del modal
 const style = {
@@ -93,10 +95,10 @@ const Dashboard = ({ title, report, data, chartType }) => {
         <BarChart width={500} height={300} data={data}>
           <XAxis dataKey="name" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content="name"/>
           <CartesianGrid strokeDasharray="3 3" />
-          <Legend />
-          <Bar dataKey="ventas" fill={colors.bar} />
+          <Legend/>
+          <Bar dataKey="cantidad" fill={colors.bar} />
         </BarChart>
       )}
       {chartType === 'pie' && (
@@ -202,10 +204,18 @@ const Dashboard = ({ title, report, data, chartType }) => {
 };
 
 const MiniPageReportes = () => {
+  
+  const {reportesCatePro, getReporteCategoProducts} = useAdmin()
+  
+  useEffect(() =>{
+    getReporteCategoProducts()
+  },[])
+
+
   const dashboards = [
     {
       title: 'Ventas de Café - Enero',
-      report: 'Reporte de ventas para el mes de enero...',
+      report: '',
       data: [
         { name: 'Semana 1', ventas: 4000 },
         { name: 'Semana 2', ventas: 3000 },
@@ -215,13 +225,9 @@ const MiniPageReportes = () => {
       chartType: 'line', // Gráfico de líneas
     },
     {
-      title: 'Clientes que Compraron Más - Febrero',
-      report: 'Clientes que más compraron en febrero...',
-      data: [
-        { name: 'Cliente 1', ventas: 5000 },
-        { name: 'Cliente 2', ventas: 4000 },
-        { name: 'Cliente 3', ventas: 3000 },
-      ],
+      title: 'Cantidad de Productos Por Categoria',
+      report: '',
+      data: reportesCatePro,
       chartType: 'bar', // Gráfico de barras
     },
     {

@@ -3,7 +3,8 @@ import { Router } from "express";
 import { 
     getProducts, createProduct, updateProduct, deleteProduct, 
     getUsers, createUser, updateUser, deleteUser,
-    getPromos, createPromo, updatePromo,  deletePromo
+    getPromos, createPromo, updatePromo,  deletePromo,
+    getReportesCateProducts
 } from "../controllers/Admininfo.controller.js";
 
 
@@ -28,5 +29,8 @@ router.get('/getpromos', getPromos)
 router.post('/createpromo', createPromo);
 router.put('/updatepromo/:id', updatePromo);
 router.delete('/deletepromo/:id', deletePromo);
+
+//Reportes
+router.get('/getreportescateproducts', getReportesCateProducts)
 
 export default router

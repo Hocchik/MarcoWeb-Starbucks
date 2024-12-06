@@ -3,6 +3,7 @@ import {
     getClients, createClient,updateClient, deleteClient,
     getProducts, createProduct, updateProduct, deleteProduct,
     getPromos, createPromo, updatePromo, deletePromo,
+    getReportesCateProducts,
 } from '../api/admindata'
 
 const AdmContext = createContext();
@@ -21,6 +22,7 @@ export function AdminContext({ children }){
     const [products, setProduct] = useState([]);
     const [promos, setPromos] = useState([]);
     const [errors, setErrors] = useState([]);
+    const [reportesCatePro, setReportesCatePro] = useState([])
 
 //Gets
 const getClientes =  async () => {
@@ -139,12 +141,23 @@ const deletePromociones = async (promo) => {
     }
 }
 
+//Reportes
+const getReporteCategoProducts = async () => {
+    try {
+        const res = await getReportesCateProducts()
+        setReportesCatePro(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
     return (
         <AdmContext.Provider value={{
             clients, getClientes, updateClientes, deleteClientes, createClientes,
             products, getProductos, updateProductos, deleteProductos, createProductos,
-            promos, getPromociones, updatePromociones, deletePromociones,
-            createPromociones
+            promos, getPromociones, updatePromociones, deletePromociones, createPromociones,
+            reportesCatePro, getReporteCategoProducts
         }}>
             { children }
         </AdmContext.Provider>

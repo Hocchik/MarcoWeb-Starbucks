@@ -21,7 +21,8 @@ export const updatePromo = (promo) => axios.put(`/updatepro/${promo._id}`, promo
 export const deletePromo = (promo) => axios.delete(`/deletepromo/${promo._id}`, promo)
 
 
-
+//Reportes
+export const getReportesCateProducts = () => axios.get('/getreportescateproducts')
 
 
 

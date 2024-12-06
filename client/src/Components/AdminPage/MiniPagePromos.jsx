@@ -15,7 +15,6 @@ import { useAdmin } from '../../context/AdminContext';
 import { useForm } from 'react-hook-form';
 import dayjs from 'dayjs'
 import { useAuth } from '../../context/AuthContextAdmin';
-import { useNavigate } from 'react-router-dom';
 
 
 /* Datos tabla */
@@ -117,7 +116,7 @@ function MiniPagePromos() {
   React.useEffect(() => {
     getPromociones(),
     getProductos()
-  }, [getPromociones])
+  }, [])
 
 
   return (
