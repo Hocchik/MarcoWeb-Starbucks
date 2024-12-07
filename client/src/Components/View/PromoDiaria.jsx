@@ -9,7 +9,6 @@ const day =  new Date().getDay();
 
     const PromoToday = Promos[day-1];
 
-    console.log(PromoToday.products)
 
     return (
       <div className="container flex flex-col md:flex-row items-center justify-between">

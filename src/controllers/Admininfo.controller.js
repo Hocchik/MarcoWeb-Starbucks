@@ -106,18 +106,41 @@ export const deletePromo = async (req, res) => {
 //Ventas
 export const getVentas = async (req, res) => {
         const ventas = await Venta.find({})
-        
         if(!ventas) return res.status(400).send({success:true, msg:'No llego'})
-        res.json(ventas);
+                const ventasConFechasFormateadas = ventas.map(venta => {
+                        return {
+                            ...venta.toObject(), // Convierte el objeto de Mongoose a un objeto normal
+                            fechaVenta: venta.fechaVenta.toISOString().split('T')[0] // Formatea la fecha
+                        };
+                    });
+        res.json(ventasConFechasFormateadas);
 }
 export const createVenta = async (req, res) => {{
-        const { productoID, nombreProducto, cantidad, precioUnitario, total, fechaVenta, ClienteID} = req.body;
+        const { nombreProducto, cantidad, ClienteID} = req.body;
+        const products = await Product.findOne({name: nombreProducto })
+        if(!products) return res.status(400).send({success:true, msg:'No llego'})
+        const productoID = products._id;
+        const precioUnitario = parseFloat(products.price.replace("S/", "").trim());
+        const total = "S/"+(cantidad * precioUnitario);
+        const fechaVenta = new Date();
+
         const newVenta = new Venta({
                 productoID, nombreProducto, cantidad, precioUnitario, total, fechaVenta, ClienteID
         })
         const saveVenta = await newVenta.save();
         res.json(saveVenta)
 }}
+export const updateVenta = async (req, res) => {
+        const venta = await Venta.findByIdAndUpdate(req.params.id, req.body, {new: true})
+        if(!venta)  return res.status(404).send({success:true, msg:'No se encontro la venta'})
+        res.json(venta)
+
+}
+export const deleteVenta = async (req, res) => {
+        const venta = await Venta.findByIdAndDelete(req.params.id)
+        if(!venta)  return res.status(404).send({success:true, msg:'No se encontro la venta'})
+        return res.sendStatus(204);
+}
 
 
 //Reportes

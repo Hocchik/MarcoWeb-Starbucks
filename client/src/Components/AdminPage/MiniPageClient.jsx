@@ -220,7 +220,7 @@ export default function MiniPageClient() {
 
       {/* Main modal */}
       <Dialog open={openCreate} onClose={() => setOpenCreate(false)}>
-        <DialogTitle>Create New Product</DialogTitle>
+        <DialogTitle>Crear Cliente</DialogTitle>
         <DialogContent>
           <form onSubmit={onSubmit}>
             <div className="grid gap-4 mb-4 grid-cols-2">

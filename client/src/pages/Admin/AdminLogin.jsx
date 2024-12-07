@@ -53,7 +53,7 @@ function AdminLogin() {
             </form>
 
             <p className="flex gap-x-2 justify-between">
-                ¿No tienes una cuenta? 
+                <div>¿<a href="/">No</a> tienes una cuenta? </div>
                 <Link to="/Admin-Register" className="text-sky-500">
                 Regístrate</Link>
             </p>

@@ -10,7 +10,9 @@ import {
     getGraficoTendencia,
     getGraficoPie,
     getGraficoLineas,
-    getGraficoBarras
+    getGraficoBarras,
+    updateVenta,
+    deleteVenta
 } from "../controllers/Admininfo.controller.js";
 
 
@@ -39,6 +41,8 @@ router.delete('/deletepromo/:id', deletePromo);
 //Ventas
 router.get('/getventas', getVentas);
 router.post('/createventa', createVenta);
+router.put('/updateventa/:id', updateVenta);
+router.delete('/deleteventa/:id', deleteVenta);
 
 //Reportes
 router.get('/getreportescateproducts', getReportesCateProducts)

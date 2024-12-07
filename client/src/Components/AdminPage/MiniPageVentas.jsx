@@ -10,44 +10,43 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import { useEffect } from 'react';
-import { useForm } from 'react-hook-form';
 import { useAdmin } from '../../context/AdminContext';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, MenuItem, TextField } from '@mui/material';
+import { useEffect } from 'react';
+import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
+import { useForm } from 'react-hook-form';
 
 const columns = [
-  { id: 'name', label: 'Nombre', minWidth: 70 },
-  { id: 'price', label: 'Precio', minWidth: 100 },
-  { id: 'category', label: 'Categoría', minWidth: 10, align: 'right'},
-  { id: 'type', label:'Tipo', minWidth: 10 }
+  { id: 'nombreProducto', label: 'Producto', minWidth: 70 },
+  { id: 'precioUnitario', label: 'Precio Unitario', minWidth: 100 },
+  { id: 'cantidad', label: 'Cantidad', minWidth: 100 },
+  { id: 'total', label: 'Total', minWidth: 100 },
+  { id: 'fechaVenta', label: 'Fecha', minWidth: 100,align: 'right',
+    type:'date', format: (value) => value.toLocaleString('en-US') }
 ];
 
-
-
-export default function MiniPageProducts() {
-  
+function MiniPageVentas() {
   const { register, handleSubmit} = useForm();
-  const {createProductos, updateProductos, deleteProductos} = useAdmin();
-  
-  const onSubmit = handleSubmit((data)  => {
-    data.price = "S/" + data.price
-    console.log(data);
-    console.log(data.type)
-    createProductos(data);
-  })
+  const { createVentas, updateVentas, deleteVentas } = useAdmin();
 
+  const onSubmit = handleSubmit((data) =>{
+    console.log(data)
+    createVentas(data)
+  })
+  
+  
   
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
-  const [openCreate, setOpenCreate] = useState(false);
-  const [formeditData, setFormeditData] = useState({});
 
   const [open, setOpen] = useState(false);
   const [currentRow, setCurrentRow] = useState(null);
   const [action, setAction] = useState('');
+  const [openCreate, setOpenCreate] = useState(false);
+  const [formeditData, setFormeditData] = useState({});
 
   const handleClickOpen = (row, actionType) => {
     setCurrentRow(row);
+    console.log(row)
     setAction(actionType);
     setOpen(true);
   };
@@ -63,11 +62,12 @@ export default function MiniPageProducts() {
       // Lógica para editar
       formeditData._id = currentRow._id
       console.log(formeditData)
-      updateProductos(formeditData)
+      updateVentas(formeditData)
+      
     } else if (action === 'delete') {
       console.log('Eliminando:', currentRow);
       // Lógica para eliminar
-      deleteProductos(currentRow);
+      deleteVentas(currentRow)
     }
     handleClose();
   };
@@ -90,33 +90,13 @@ export default function MiniPageProducts() {
     setPage(0);
   };
 
-
-
-
-  /* Categoria y Tipo */
-  const [tipoOptions, setTipoOptions] = useState([]);
-  const optionsMap = {
-    Bebidas: ['Frappuccinos', 'Expresso Caliente', 'Expresso Frío', 'Refreshers', 'Otras bebidas calientes', 'Otras bebidas frías', 'Shaken Espresso'],
-
-    Alimentos: ['Pastries', 'Postres', 'Sandwiches'],
-
-    "Merch y Café en Grano": ['Café en Grano', 'Merch'],
-
-    "Packs y Boxes": ['Coffee for Share', 'Desayunos', 'Antojos de la tarde'],
-  };
-  const handleCategoryChange = (event) => {
-    const selectedCategory = event.target.value;
-    setTipoOptions(optionsMap[selectedCategory] || []);
-    console.log(tipoOptions)
-  };
-
-  const {getProductos, products} = useAdmin()
-  const rows = products
+  const {getVentass, ventas} = useAdmin()
+  
+  const rows = ventas
 
   useEffect(() => {
-    getProductos()
-  }, [])  
-
+    getVentass()
+  }, [])
 
   return (
     <div className='flex justify-between items-end flex-col'>
@@ -134,7 +114,7 @@ export default function MiniPageProducts() {
                   {column.label}
                 </TableCell>
               ))}
-              <TableCell sx={{fontSize: '1.10rem', textAlign:'center'}} >Acciones</TableCell>
+              <TableCell sx={{fontSize: '1.10rem', textAlign:'center'}}>Acciones</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -150,21 +130,23 @@ export default function MiniPageProducts() {
                           {column.format && typeof value === 'number'
                             ? column.format(value)
                             : value}
+                            
                         </TableCell>
                       );
                     })}
-                    <TableCell>
-                <Button sx={{width: '30px'}} 
+                <TableCell>
+                <Button
                   onClick={() => handleClickOpen(row, 'edit')}
                 >
                   <EditIcon/>
                 </Button>
-                <Button sx={{width: '30px'}} 
+                <Button
                   onClick={() => handleClickOpen(row, 'delete')}
                 >
                   <DeleteIcon/>
                 </Button>
               </TableCell>
+
                   </TableRow>
                 );
               })}
@@ -172,9 +154,10 @@ export default function MiniPageProducts() {
         </Table>
       </TableContainer>
 
-      {/* Modal */}
+ 
+    {/* Modal */}
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>{action === 'edit' ? 'Editar' : 'Eliminar'} Producto </DialogTitle>
+        <DialogTitle>{action === 'edit' ? 'Editar' : 'Eliminar'} Registro</DialogTitle>
         <DialogContent>
           {action === 'edit' ? (
             <form>
@@ -190,19 +173,9 @@ export default function MiniPageProducts() {
                 onChange={handleChange} // Manejar cambios en los inputs
               />
             ))}
-              <TextField
-                key={'urlimagen'}
-                margin="dense"
-                name={'urlimagen'} // Nombre del campo igual al id de la columna
-                label={'URL de la Imagen'}
-                variant='outlined'
-                type='text'
-                fullWidth
-                onChange={handleChange}
-              />
           </form>
           ) : (
-            <p>¿Está seguro de que desea eliminar el registro: {currentRow?.id}?</p>
+            <p>¿Está seguro de que desea eliminar el registro: {currentRow?.nombreProducto}?</p>
           )}
         </DialogContent>
         <DialogActions>
@@ -214,7 +187,7 @@ export default function MiniPageProducts() {
           </Button>
         </DialogActions>
       </Dialog>
-      
+
       <TablePagination
         rowsPerPageOptions={[5, 10, 25]}
         component="div"
@@ -226,113 +199,74 @@ export default function MiniPageProducts() {
       />
     </Paper>
 
-      {/* Modal Submitº */}
+{/* Modal Submitº */}
       <Button
         variant="contained"
         color="primary"
         onClick={() => setOpenCreate(true)}
         style={{ marginTop: '16px' }}
       >
-        Agregar Producto +
+        Agregar Venta +
       </Button>
 
       {/* Main modal */}
       <Dialog open={openCreate} onClose={() => setOpenCreate(false)}>
-        <DialogTitle>Crear Producto</DialogTitle>
+        <DialogTitle>Crear Venta</DialogTitle>
         <DialogContent>
           <form onSubmit={onSubmit}>
             <div className="grid gap-4 mb-4 grid-cols-2">
               <TextField
-                name="name"
-                label="Name"
-                variant="outlined"
-                fullWidth
-                margin="dense"
-                {...register("name")}
-                required
-                placeholder="Type product name"
-              />
-              <TextField
-                name="price"
-                label="Price"
+                name="nombreProducto"
+                label="Nombre del Producto"
                 type="text"
                 variant="outlined"
                 fullWidth
                 margin="dense"
-                {...register("price")}
+                {...register("nombreProducto")}
                 required
-                placeholder="S/19.90"
+                placeholder="Ingresa el nombre del Producto"
               />
               <TextField
-                select
-                name="category"
-                label="Category"
+                name="cantidad"
+                label="Cantidad"
+                type="number"
                 variant="outlined"
                 fullWidth
                 margin="dense"
-                {...register("category")}
-                onChange={handleCategoryChange}
-              >
-                <MenuItem value="">Select Category</MenuItem>
-                <MenuItem value="Bebidas">Bebidas</MenuItem>
-                <MenuItem value="Alimentos">Alimentos</MenuItem>
-                <MenuItem value="Merch y Café en Grano">Merch y Café en Grano</MenuItem>
-                <MenuItem value="Packs y Boxes">Packs y Boxes</MenuItem>
-              </TextField>
-              <TextField
-                select
-                name="type"
-                label="Tipo"
-                variant="outlined"
-                fullWidth
-                margin="dense"
-                {...register("type")}
-                >
-                <MenuItem value="">Select Type</MenuItem>
-                {tipoOptions.map((type) => (
-                <MenuItem key={type} value={type}>
-                  {type}
-                </MenuItem>
-                ))}
-              </TextField>
-              <TextField
-                name="description"
-                label="Description"
-                variant="outlined"
-                fullWidth
-                margin="dense"
-                multiline
-                rows={3}
-                {...register("description")}
-                placeholder="Escribe una breve descripción"
-              />
-              {/* Insertar link imagen */}
-              <TextField
-                name="urlimagen"
-                label="URL"
-                variant="outlined"
-                fullWidth
-                margin="dense"
-                {...register("urlimagen")}
+                {...register("cantidad")}
                 required
-                placeholder="Url de la Imagen"
+                placeholder="Ingresa la cantidad a vender"
               />
-
+              <TextField
+                name="clienteID"
+                label="ID del cliente"
+                type="text"
+                variant="outlined"
+                fullWidth
+                margin="dense"
+                {...register("ClienteID")}
+                required
+                placeholder="Ingresa id del Cliente"
+              />
     </div>
+
+            
+
             <DialogActions>
               <Button onClick={() => setOpenCreate(false)} color="primary">
                 Cancelar
               </Button>
               <Button type="submit" color="primary" onClick={() => setOpenCreate(false)}>
-                Agregar Producto
+                Agregar Venta
               </Button>
             </DialogActions>
           </form>
         </DialogContent>
       </Dialog>
 
-      </div>
-    
-    )
+
+    </div>
+  );
 }
-  
+
+export default MiniPageVentas

@@ -31,3 +31,12 @@ body{
 .bans-Promo{
     background-color: #1F3A31;
 }
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    padding: 15px;
+}

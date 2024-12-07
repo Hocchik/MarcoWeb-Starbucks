@@ -20,6 +20,12 @@ export const createPromo = promo => axios.post(`/createpromo`, promo)
 export const updatePromo = (promo) => axios.put(`/updatepro/${promo._id}`, promo)
 export const deletePromo = (promo) => axios.delete(`/deletepromo/${promo._id}`, promo)
 
+//Ventas
+export const getVentas = () => axios.get('/getventas')
+export const createVenta = venta => axios.post(`/createventa`, venta)
+export const updateVenta = (venta) => axios.put(`/updateventa/${venta._id}`, venta)
+export const deleteVenta = (venta) => axios.delete(`/deleteventa/${venta._id}`, venta)
+
 
 //Reportes
 export const getReportesCateProducts = () => axios.get('/getreportescateproducts')

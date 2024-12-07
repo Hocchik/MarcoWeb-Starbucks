@@ -16,6 +16,7 @@ import AdminRegister from "./pages/Admin/AdminRegister.jsx"
 import MenuPage from "./pages/MenuPage/MenuPage.jsx"
 import TiendasPage from "./pages/TiendasPage/TiendasPage.jsx"
 import ProductPage from "./pages/MenuPage/ProductPage.jsx"
+import ProductDetailPage from "./pages/MenuPage/ProductDetailPage.jsx"
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<HomePage/>} />
         <Route path="/menu" element={<MenuPage/>} />
         <Route path="/menu/:category/:type" element={<ProductPage/>} />
+        <Route path="/menu/:category/:type/:name" element={<ProductDetailPage/>}/>
         <Route path="/rewards" element={<Rewards/>} />
         <Route path="/tiendas" element={<TiendasPage/>} />
 

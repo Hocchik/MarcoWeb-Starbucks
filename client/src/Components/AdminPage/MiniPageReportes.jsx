@@ -27,8 +27,8 @@ import {
   ScatterChart,
   Scatter,
 } from 'recharts';
-import PrintIcon from '@mui/icons-material/Print';
-import EmailIcon from '@mui/icons-material/Email';
+/* import PrintIcon from '@mui/icons-material/Print';
+import EmailIcon from '@mui/icons-material/Email'; */
 import { useAdmin } from '../../context/AdminContext.jsx';
 
 
@@ -46,27 +46,28 @@ const style = {
 };
 
 // Color personalizado para botones
-const customColor = '#00362e';
+/* const customColor = '#00362e'; */
 
 // Colores vivos para gráficos
 const colors = {
   line: '#ff4d4d', // Rojo
   bar: '#ff9900',  // Naranja
+  bar1: '#00b300', // Verde
   pie: '#ffcc00',  // Amarillo
   radial: '#ff4d4d', // Rojo
   area: '#1B77E1',  // Naranja
   scatter: '#ffcc00', // Amarillo
 };
 
-const Dashboard = ({ title, report, data, chartType }) => {
+const Dashboard = ({ title, /* report */ data, chartType }) => {
   const [openPrint, setOpenPrint] = useState(false);
   const [openEmail, setOpenEmail] = useState(false);
   const [email, setEmail] = useState('');
 
-  const handlePrintOpen = () => setOpenPrint(true);
+  /* const handlePrintOpen = () => setOpenPrint(true); */
   const handlePrintClose = () => setOpenPrint(false);
 
-  const handleEmailOpen = () => setOpenEmail(true);
+  /* const handleEmailOpen = () => setOpenEmail(true); */
   const handleEmailClose = () => setOpenEmail(false);
 
   const handleEmailChange = (e) => setEmail(e.target.value);
@@ -91,7 +92,7 @@ const Dashboard = ({ title, report, data, chartType }) => {
           <Line type="monotone" dataKey="cantidad" stroke={colors.line} />
         </LineChart>
       )}
-      {chartType === 'bar' && (
+      {chartType === 'bar'  && (
         <BarChart width={500} height={300} data={data}>
           <XAxis dataKey="name" />
           <YAxis />
@@ -99,6 +100,16 @@ const Dashboard = ({ title, report, data, chartType }) => {
           <CartesianGrid strokeDasharray="3 3" />
           <Legend/>
           <Bar dataKey="cantidad" fill={colors.bar} />
+        </BarChart>
+      )}
+      {chartType === 'bar1'  && (
+        <BarChart width={500} height={300} data={data}>
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip content="name"/>
+          <CartesianGrid strokeDasharray="3 3" />
+          <Legend/>
+          <Bar dataKey="cantidad" fill={colors.bar1} />
         </BarChart>
       )}
       {chartType === 'pie' && (
@@ -141,7 +152,7 @@ const Dashboard = ({ title, report, data, chartType }) => {
           <Scatter name="cantidad" dataKey="cantidad"  data={data} fill={colors.scatter} />
         </ScatterChart>
       )}
-      <Typography variant="body2" gutterBottom>
+      {/* <Typography variant="body2" gutterBottom>
         {report}
       </Typography>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px', gap:"20px" }}>
@@ -161,7 +172,7 @@ const Dashboard = ({ title, report, data, chartType }) => {
         >
           Enviar por Correo
         </Button>
-      </div>
+      </div> */}
 
       {/* Modal de Imprimir */}
       <Modal open={openPrint} onClose={handlePrintClose}>
@@ -219,7 +230,6 @@ const MiniPageReportes = () => {
     getGraficodeBarra()
   },[])
 
-  console.log(graficoBarra)
 
   const dashboards = [
     {
@@ -244,7 +254,7 @@ const MiniPageReportes = () => {
       title: 'Top 5 productos más vendidos - Diciembre',
       report: '',
       data: graficoBarra,
-      chartType: 'bar', // Gráfico bar
+      chartType: 'bar1', // Gráfico bar
     },
     {
       title: 'Ventas por Dia - Diciembre',

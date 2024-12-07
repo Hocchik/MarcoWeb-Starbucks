@@ -1,5 +1,9 @@
+import { useState } from "react";
 
 function Footer() {
+
+    const [counts, setCounts] = useState(0);
+
     return (
     <>
 <div className="flex items-end w-full min-h-screen">
@@ -121,8 +125,9 @@ function Footer() {
         </div>
         <div className="bg-gray-300">
             <div className="container px-5 py-4 mx-auto">
-                <p className="text-sm text-gray-700 capitalize xl:text-center">© 2024 Starbucks Coffee Company. All rights reserved. Hocchi </p>
+                <p className="text-sm text-gray-700 capitalize xl:text-center">© 2024 Starbucks Coffee Company. All rights reserved. <b onClick={() =>setCounts(counts+1)}>Hocchi</b></p>
             </div>
+            {counts>=5? <div className="text-center pb-2">Ingresa al modo <a href="/admin" className="cursor-default" onClick={() =>setCounts(0)}>Admin</a></div>: ''}
         </div>
     </footer>
 </div>

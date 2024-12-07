@@ -5,7 +5,8 @@ import Box from '@mui/material/Box';
 import { createTheme } from '@mui/material/styles';
 import BoyIcon from '@mui/icons-material/Boy';
 import FastfoodIcon from '@mui/icons-material/Fastfood';
-import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import SellIcon from '@mui/icons-material/Sell';
 import PaidIcon from '@mui/icons-material/Paid';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -24,6 +25,11 @@ const NAVIGATION = [
     title: 'Sección Principal',
   },
   {
+    segment: 'dashboard',
+    title: 'Dashboard',
+    icon: <DashboardIcon/>,
+  },
+  {
     segment: 'clientes',
     title: 'Clientes',
     icon: <BoyIcon/>,
@@ -34,9 +40,9 @@ const NAVIGATION = [
     icon: <FastfoodIcon />,
   },
   {
-    segment: 'reportes',
-    title: 'Reportes',
-    icon: <ProductionQuantityLimitsIcon />,
+    segment: 'ventas',
+    title: 'Ventas',
+    icon: <SellIcon />,
   },
   {
     segment: 'promociones',

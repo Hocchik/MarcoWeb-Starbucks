@@ -7,7 +7,11 @@ import {
     getGraficoTendencia,
     getGraficoPie,
     getGraficoLineas,
-    getGraficoBarra
+    getGraficoBarra,
+    getVentas,
+    createVenta,
+    deleteVenta,
+    updateVenta
 } from '../api/admindata'
 
 const AdmContext = createContext();
@@ -25,6 +29,7 @@ export function AdminContext({ children }){
     const [clients, setClient] = useState([]);
     const [products, setProduct] = useState([]);
     const [promos, setPromos] = useState([]);
+    const [ventas, setVentas] = useState([]);
     const [errors, setErrors] = useState([]);
     const [reportesCatePro, setReportesCatePro] = useState([])
     const [reportesDisperPro, setReportesDisperPro] = useState([])
@@ -150,6 +155,45 @@ const deletePromociones = async (promo) => {
     }
 }
 
+//Ventas
+const getVentass = async () => {
+    try {
+        const res = await getVentas()
+        setVentas(res.data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+const createVentas = async (venta) => {
+    try {
+        const res = await createVenta(venta); 
+        console.log(res)
+    } catch (error) {
+        if(Array.isArray(error.response.data)){
+            return setErrors(error.response.data)
+        }
+        setErrors([error.response.data.message]);
+        console.log(errors)
+    }
+}
+const updateVentas = async (venta) => {
+    try {
+        const res = await updateVenta(venta)
+        console.log(res)
+    } catch (error) {
+        console.log(error)
+    }
+}
+const deleteVentas = async (venta) => {
+    try {
+        const res = await deleteVenta(venta)
+        console.log(res)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
 //Reportes
 const getReporteCategoProducts = async () => {
     try {
@@ -211,6 +255,7 @@ const getGraficodeBarra = async () => {
             clients, getClientes, updateClientes, deleteClientes, createClientes,
             products, getProductos, updateProductos, deleteProductos, createProductos,
             promos, getPromociones, updatePromociones, deletePromociones, createPromociones,
+            ventas, getVentass, createVentas, updateVentas, deleteVentas, 
             reportesCatePro, getReporteCategoProducts,
             reportesDisperPro, getReportesDisperProducts,
             graficoTendencia, getGraficodeTendencia,
